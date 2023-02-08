@@ -11,7 +11,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
         String expectedURL = "https://qa01.nk.spirit.com/my-trips/find-trip";
-        String newUrl = driver.getCurrentUrl();
+        String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
@@ -25,7 +25,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
         String expectedURL = "https://qa01.nk.spirit.com/";
         App().Pages().SpiritMyTripPage().SpiritLogo();
         Thread.sleep(2000);
-        String newUrl = driver.getCurrentUrl();
+        String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
@@ -44,7 +44,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
         Thread.sleep(2000);
         App().Pages().SpiritMyTripPage().SingIn();
         Thread.sleep(5000);
-        String newUrl = driver.getCurrentUrl();
+        String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
@@ -59,7 +59,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
         String expectedURL = "https://qa01.nk.spirit.com/free-spirit";
         App().Pages().SpiritMyTripPage().CreateAnAccCTA();
         Thread.sleep(3000);
-        String newUrl = driver.getCurrentUrl();
+        String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 

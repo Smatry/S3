@@ -16,7 +16,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         String expectedURL = "https://qa01.nk.spirit.com/free-spirit";
         App().Pages().SpiritHomePage().FreeSpiritURL();
         Thread.sleep(2000);
-        String newUrl = driver.getCurrentUrl();
+        String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
 
         sa.assertEquals(newUrl,expectedURL,"Verify URL of new page");
@@ -30,7 +30,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         String expectedURL = "https://qa01.nk.spirit.com/savers-club";
         App().Pages().SpiritHomePage().SaverClubURL();
         Thread.sleep(2000);
-        String newUrl = driver.getCurrentUrl();
+        String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
