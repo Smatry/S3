@@ -41,8 +41,20 @@ public class Spirit_Home_Page_Elements {
 
      //Drop_Down_To
      @FindBy(xpath = "//label[@class='toStation ng-tns-c142-3']") public  List<WebElement> getDropDownToAirport;
+
      //Spirit_JetBlue_Url
      @FindBy(xpath = "//strong//a[@target='_blank']") public WebElement SpiritJetBlueCTA;
+
+     //Bank_Of_America_Url
+     @FindBy(xpath = "//div//a[@class='cc-button-credit-card text-uppercase display-desktop text-center btn btn-primary']") public WebElement BankOfAmSTA;
+
+     //Landing_OnTheBooking_FlightPage
+     @FindBy(xpath = "//label[@class='toStation ng-tns-c142-3']") public WebElement ToStationDropDown;
+
+     @FindBy(xpath = "//p[@class='station-picker-dropdown__station-name ng-star-inserted']") public WebElement ToStation;
+
+     @FindBy(xpath = "//button//i[@class='fal fa-search ng-tns-c142-3']") public WebElement search;
+
 
      public Spirit_Home_Page_Elements(WebDriver driver) {
          this.driver = driver;

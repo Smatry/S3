@@ -73,9 +73,31 @@ public class Spirit_Home_Page {
 
     }
     // Spirit_JetBlue_url
-
     public void SpiritJetBlueUrl () {
         homeSearchElements.SpiritJetBlueCTA.click();
+
+    }
+
+    // Bank_Of_America_Link
+    public void BankOfAmericaUrl() {
+        homeSearchElements.BankOfAmSTA.click();
+
+    }
+
+    //Landing_OnTheBooking_FlightPage
+    public void ToStationDropDownMenu() {
+        homeSearchElements.ToStationDropDown.click();
+
+    }
+
+    public void ToStationSelected() {
+        homeSearchElements.ToStation.click();
+
+
+    }
+    public void SearchButton() {
+        homeSearchElements.search.click();
+
     }
 
 }
