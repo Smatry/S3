@@ -14,6 +14,35 @@ public class Spirit_Home_Page {
         homeSearchElements = new Spirit_Home_Page_Elements(driver);
     }
 
+    //My_Trip_url
+    public void MyTripUrl () {
+        homeSearchElements.myTripsCTA.click();
+    }
+
+    //Check_In_Url
+    public void CheckInUrl() {
+        homeSearchElements.CheckInCTA.click();
+
+    }
+
+    //Flight_Status_Url
+    public void FlightStatusUrl () {
+        homeSearchElements.flightStatusCTA.click();
+
+    }
+    //Deals_Url
+    public void DealsUrl() {
+        homeSearchElements.DealsCTA.click();
+
+    }
+
+    //Contact_Us_Url
+    public void ContactUsUrl() {
+        homeSearchElements.ContactUsCTA.click();
+
+    }
+
+
     // Free_Spirit_url
     public void FreeSpiritURL () {
         homeSearchElements.FreeSpiritIcon.click();
@@ -37,5 +66,8 @@ public class Spirit_Home_Page {
         return homeSearchElements.DropDownFromAirport;
 
     }
+    public List<WebElement> DropDownToStations () {
+        return homeSearchElements.getDropDownToAirport;
 
+    }
 }

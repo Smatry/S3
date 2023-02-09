@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1318b327-9d80-4432-9184-5bbbdef3baeb" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/Libraries/FlowLib.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Libraries/AppLib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Libraries/AppLib.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Spirit_Home_Page_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Spirit_Home_Page_Elements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Spirit_Home_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Spirit_Home_Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/AbstractHomeBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AbstractHomeBaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_My_Trips_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_My_Trips_Sanity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,22 +35,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/96910/Downloads/testng-7.4.0.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/96910/Downloads/testng-7.4.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.Spirit_Home_Sanity">
+}</component>
+  <component name="RunManager" selected="TestNG.Spirit_Home_Sanity.drop_Down_To">
     <configuration name="Spirit_Home_Sanity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
@@ -69,7 +68,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_My_Trips_Sanity" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Home_Sanity.Contact_Us_Url" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -78,25 +77,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_My_Trips_Sanity" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Spirit_My_Trips_Sanity.Create_An_Acc" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="spirit-test 3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_My_Trips_Sanity" />
-      <option name="METHOD_NAME" value="Create_An_Acc" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Contact_Us_Url" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -104,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_My_Trips_Sanity.Sing_In_To_Acc" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Home_Sanity.Deals_Url" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -113,8 +95,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_My_Trips_Sanity" />
-      <option name="METHOD_NAME" value="Sing_In_To_Acc" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Deals_Url" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -122,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_My_Trips_Sanity.Spirit_logo_link_navigates_home_page" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Home_Sanity.Flight_Status_Url" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +113,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_My_Trips_Sanity" />
-      <option name="METHOD_NAME" value="Spirit_logo_link_navigates_home_page" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Flight_Status_Url" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spirit_Home_Sanity.drop_Down_To" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="spirit-test 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="drop_Down_To" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Spirit_Home_Sanity.drop_Down_To" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Contact_Us_Url" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Deals_Url" />
         <item itemvalue="TestNG.Spirit_Home_Sanity" />
-        <item itemvalue="TestNG.Spirit_My_Trips_Sanity" />
-        <item itemvalue="TestNG.Spirit_My_Trips_Sanity.Spirit_logo_link_navigates_home_page" />
-        <item itemvalue="TestNG.Spirit_My_Trips_Sanity.Create_An_Acc" />
-        <item itemvalue="TestNG.Spirit_My_Trips_Sanity.Sing_In_To_Acc" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Flight_Status_Url" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675882748559</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1675886300697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675886300697</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
