@@ -24,14 +24,24 @@ public class Spirit_My_Trips_Page {
 
      public void PasswordDataAdd(String password){
          myTripPageElements.PasswordData.sendKeys(password);
+
      }
+
      public void SingIn (){
          myTripPageElements.SingInCTA.click();
+
      }
 
     // Create_An_Acc
     public void CreateAnAccCTA(){
         myTripPageElements.CreateAnAccCTA.click();
     }
+
+
+
+    // Forgot_Password_Url
+    public void ForgotPasswordUrl(){
+        myTripPageElements.ForgotPassword.click();
+     }
 
 }

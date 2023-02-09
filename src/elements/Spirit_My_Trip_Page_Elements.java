@@ -20,6 +20,9 @@ public class Spirit_My_Trip_Page_Elements {
     // Create_An_Acc
     @FindBy (xpath = "//button[@class='btn btn-secondary btn-responsive']") public WebElement CreateAnAccCTA;
 
+    // Forgot_Password_Url
+    @FindBy (xpath = "//div//button[@routerlink='/retrieve-password']") public WebElement ForgotPassword;
+
     public Spirit_My_Trip_Page_Elements(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

@@ -163,7 +163,21 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         sa.assertTrue(arr1.equals(arr2));
 
     }
+    @Test
+    public void Spirit_JetBlue_Url() throws Exception {
 
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        String expectedURL = "https://lowfaresgreatservice.com/";
+        App().Pages().SpiritHomePage().SpiritJetBlueUrl();
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        System.out.println(newUrl);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+
+
+      }
 
 
     }

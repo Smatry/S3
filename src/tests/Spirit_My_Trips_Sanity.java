@@ -65,5 +65,21 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
 
     }
 
+    @Test
+    public void Forgot_Password_Url() throws Exception {
+
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        String expectedURL = "https://qa01.nk.spirit.com/retrieve-password";
+        Thread.sleep(2000);
+        App().Pages().SpiritMyTripPage().ForgotPasswordUrl();
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        System.out.println(newUrl);
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+
+    }
+
 
 }

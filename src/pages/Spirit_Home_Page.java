@@ -66,8 +66,16 @@ public class Spirit_Home_Page {
         return homeSearchElements.DropDownFromAirport;
 
     }
+
+    // drop_down_to
     public List<WebElement> DropDownToStations () {
         return homeSearchElements.getDropDownToAirport;
 
     }
+    // Spirit_JetBlue_url
+
+    public void SpiritJetBlueUrl () {
+        homeSearchElements.SpiritJetBlueCTA.click();
+    }
+
 }
