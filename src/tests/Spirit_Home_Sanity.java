@@ -216,5 +216,27 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
        }
 
+    @Test
+    public void Booking_Flight_Confirm () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        String expectedURL = "https://qa01.nk.spirit.com/book/flights";
+        App().Pages().SpiritHomePage().TripTypeSelect();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().SelectedOneWay();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().ToStationDropDownMenu();
+        Thread.sleep(5000);
+        App().Pages().SpiritHomePage().ToStationSelected();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().SearchButton();
+        Thread.sleep(5000);
+        App().Pages().SpiritHomePage().FlightConfirmed();
+        Thread.sleep(5000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        System.out.println(newUrl);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+    }
 
     }

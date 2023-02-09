@@ -99,5 +99,10 @@ public class Spirit_Home_Page {
         homeSearchElements.search.click();
 
     }
+    // Booking_Flight_Confirm
+    public void FlightConfirmed() {
+        homeSearchElements.Confirm.click();
+
+    }
 
 }

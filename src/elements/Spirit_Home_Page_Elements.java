@@ -56,6 +56,10 @@ public class Spirit_Home_Page_Elements {
      @FindBy(xpath = "//button//i[@class='fal fa-search ng-tns-c142-3']") public WebElement search;
 
 
+     // Booking_Flight_Confirm
+     @FindBy(xpath = "//div//p[@class='p-grid__pricing-value ng-star-inserted']") public WebElement Confirm;
+
+
      public Spirit_Home_Page_Elements(WebDriver driver) {
          this.driver = driver;
          PageFactory.initElements(driver, this);
