@@ -1,6 +1,7 @@
 package tests;
 
 import Libraries.AppLib;
+import elements.Spirit_User_Acc_Elements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +13,7 @@ import org.testng.asserts.SoftAssert;
 public class Spirit_User_Acc_Sanity {
 
     WebDriver driver;
+    Spirit_User_Acc_Elements UserAccSearchElements;
 
        @BeforeMethod
         public void setUp() throws Exception {
@@ -30,6 +32,9 @@ public class Spirit_User_Acc_Sanity {
         driver.findElement(By.xpath("//button[@class='btn btn-primary btn-responsive']")).click();
         Thread.sleep(2000);
 
+        UserAccSearchElements = new Spirit_User_Acc_Elements(driver);
+
+
     }
 
     @AfterMethod
@@ -44,7 +49,7 @@ public class Spirit_User_Acc_Sanity {
       SoftAssert sa = new SoftAssert();
 
       String expectedURL = "https://qa01.nk.spirit.com/account/activity";
-      String expectedTitle = "Manage Travel - Find Trip | Spirit Airlines";
+      String expectedTitle = "Spirit Airlines - Loyalty";
 
       String newUrl = driver.getCurrentUrl();
       String newTitle = driver.getTitle();
@@ -65,8 +70,8 @@ public class Spirit_User_Acc_Sanity {
         SoftAssert sa = new SoftAssert();
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/dashboard";
-        String expectedTitle = "Spirit Airlines - Dashboard";
-        driver.findElement(By.id("dashboard")).click();
+        String expectedTitle = "Spirit Airlines - Activity";
+        UserAccSearchElements.dashboardCTA.click();
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
         System.out.println(newUrl);
@@ -85,7 +90,7 @@ public class Spirit_User_Acc_Sanity {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/status";
         String expectedTitle = "Spirit Airlines - Status";
-        driver.findElement(By.id("status")).click();
+        UserAccSearchElements.statusCTA.click();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -104,7 +109,7 @@ public class Spirit_User_Acc_Sanity {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/offers";
         String expectedTitle = "Spirit Airlines - Offers";
-        driver.findElement(By.id("offers")).click();
+        UserAccSearchElements.offersCTA.click();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -124,7 +129,7 @@ public class Spirit_User_Acc_Sanity {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/savings-club";
         String expectedTitle = "Spirit Airlines - Savers Club";
-        driver.findElement(By.id("savings-club")).click();
+        UserAccSearchElements.saversClubCTA.click();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();

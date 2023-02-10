@@ -11,13 +11,10 @@ public class Spirit_User_Acc_Elements {
 
     //Dashboard
     @FindBy (id = "dashboard")  public WebElement dashboardCTA;
-
     //Status
     @FindBy (id = "status") public WebElement statusCTA;
-
     //Offers
     @FindBy (id = "offers") public WebElement offersCTA;
-
     //SaverClub
     @FindBy (id = "savings-club") public WebElement saversClubCTA;
 
