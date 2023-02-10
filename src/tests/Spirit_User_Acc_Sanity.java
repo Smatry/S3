@@ -28,6 +28,7 @@ public class Spirit_User_Acc_Sanity {
         driver.findElement(By.xpath( "//input[@data-qa='find-trip-page-password']")).sendKeys("Brandy12$");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@class='btn btn-primary btn-responsive']")).click();
+        Thread.sleep(6000);
 
     }
 
@@ -60,13 +61,52 @@ public class Spirit_User_Acc_Sanity {
         SoftAssert sa = new SoftAssert();
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/dashboard";
-        String expectedTitle = "Spirit Airlines - Activity";
-        driver.findElement(By.xpath("//ul//li//a[@class='no-decoration active black-font']")).click();
+        String expectedTitle = "Spirit Airlines - Dashboard";
+        driver.findElement(By.id("dashboard")).click();
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
         Thread.sleep(5000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Status () throws Exception   {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/status";
+        String expectedTitle = "Spirit Airlines - Status";
+        driver.findElement(By.id("status")).click();
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(6000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+    @Test
+    public void Offers () throws Exception   {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/offers";
+        String expectedTitle = "Spirit Airlines - Offers";
+        driver.findElement(By.id("offers")).click();
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(6000);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
