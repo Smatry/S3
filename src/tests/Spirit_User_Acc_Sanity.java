@@ -38,13 +38,11 @@ public class Spirit_User_Acc_Sanity {
     }
 
       @Test
-      public void logged_In_Title_Verification () throws Exception   {
+      public void logged_In () throws Exception   {
 
       SoftAssert sa = new SoftAssert();
-
-      Thread.sleep(2000);
       String expectedURL = "https://qa01.nk.spirit.com/account/activity";
-      String expectedTitle = "Spirit Airlines - Loyalty";
+      String expectedTitle = "Manage Travel - Find Trip | Spirit Airlines";
       String newUrl = driver.getCurrentUrl();
       String newTitle = driver.getTitle();
       System.out.println(newUrl);
@@ -56,5 +54,23 @@ public class Spirit_User_Acc_Sanity {
 
     }
 
+    @Test
+    public void Dashboard () throws Exception   {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/dashboard";
+        String expectedTitle = "Spirit Airlines - Activity";
+        driver.findElement(By.xpath("//ul//li//a[@class='no-decoration active black-font']")).click();
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(5000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
 
 }
