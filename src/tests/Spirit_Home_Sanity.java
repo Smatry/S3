@@ -238,5 +238,29 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
     }
+    @Test
+    public void Landing_On_The_Bunbles_Page () throws Exception {
 
-    }
+        SoftAssert sa = new SoftAssert();
+        String expectedURL = "https://qa01.nk.spirit.com/book/bundles";
+        App().Pages().SpiritHomePage().TripTypeSelect();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().SelectedOneWay();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().ToStationDropDownMenu();
+        Thread.sleep(5000);
+        App().Pages().SpiritHomePage().ToStationSelected();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().SearchButton();
+        Thread.sleep(5000);
+        App().Pages().SpiritHomePage().FlightConfirmed();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
+        String newUrl = App().Flow().getCurrentPageUrl();
+        System.out.println(newUrl);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+     }
+
+
+}

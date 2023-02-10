@@ -18,10 +18,7 @@ public class AbstractHomeBaseTest {
     public void setUp() throws Exception {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\96910\\Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
-
         driver.get("https://qa01.nk.spirit.com/");
-
-        Thread.sleep(2000);
         Thread.sleep(2000);
         driver.manage().window().maximize();
         Thread.sleep(2000);
