@@ -13,8 +13,8 @@ public class Spirit_User_Acc_Sanity {
 
     WebDriver driver;
 
-    @BeforeMethod
-    public void setUp() throws Exception {
+       @BeforeMethod
+        public void setUp() throws Exception {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\96910\\Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://qa01.nk.spirit.com/my-trips/find-trip");
@@ -37,29 +37,24 @@ public class Spirit_User_Acc_Sanity {
 
     }
 
-    @Test
-    public void logged_In () throws Exception   {
+      @Test
+      public void logged_In_Title_Verification () throws Exception   {
 
-    SoftAssert sa = new SoftAssert();
-    Thread.sleep(2000);
-    String expectedURL = "https://qa01.nk.spirit.com/account/activity";
-    String newUrl = driver.getCurrentUrl();
-    System.out.println(newUrl);
-    Thread.sleep(5000);
-    sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+      SoftAssert sa = new SoftAssert();
 
-    }
-    @Test
-    public void Gold_Member () throws Exception   {
+      Thread.sleep(2000);
+      String expectedURL = "https://qa01.nk.spirit.com/account/activity";
+      String expectedTitle = "Spirit Airlines - Loyalty";
+      String newUrl = driver.getCurrentUrl();
+      String newTitle = driver.getTitle();
+      System.out.println(newUrl);
+      System.out.println(newTitle);
+      Thread.sleep(5000);
 
-        SoftAssert sa = new SoftAssert();
-        Thread.sleep(2000);
-        String expectedTitle = "Free Spirit Gold";
-        String newTitle = driver.getTitle();
-        System.out.println(newTitle);
-        Thread.sleep(5000);
-        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+      sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+      sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
+
 
 }
