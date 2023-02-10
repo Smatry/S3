@@ -28,7 +28,7 @@ public class Spirit_User_Acc_Sanity {
         driver.findElement(By.xpath( "//input[@data-qa='find-trip-page-password']")).sendKeys("Brandy12$");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@class='btn btn-primary btn-responsive']")).click();
-        Thread.sleep(6000);
+        Thread.sleep(2000);
 
     }
 
@@ -42,12 +42,16 @@ public class Spirit_User_Acc_Sanity {
       public void logged_In () throws Exception   {
 
       SoftAssert sa = new SoftAssert();
+
       String expectedURL = "https://qa01.nk.spirit.com/account/activity";
       String expectedTitle = "Manage Travel - Find Trip | Spirit Airlines";
+
       String newUrl = driver.getCurrentUrl();
       String newTitle = driver.getTitle();
+
       System.out.println(newUrl);
       System.out.println(newTitle);
+
       Thread.sleep(5000);
 
       sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
@@ -112,5 +116,27 @@ public class Spirit_User_Acc_Sanity {
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
+
+    @Test
+    public void Saver$_Club () throws Exception   {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/savings-club";
+        String expectedTitle = "Spirit Airlines - Savers Club";
+        driver.findElement(By.id("savings-club")).click();
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(6000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+
 
 }

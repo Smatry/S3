@@ -99,10 +99,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
-
     }
-
-
 
     @Test
     public void Saver_Club_Url () throws Exception {
