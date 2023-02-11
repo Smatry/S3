@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1318b327-9d80-4432-9184-5bbbdef3baeb" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/src/pages/Spirit_User_Acc_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elements/Spirit_User_Acc_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Spirit_User_Acc_Elements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" afterDir="false" />
@@ -48,7 +49,24 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Spirit_User_Acc_Sanity.Dashboard">
+  <component name="RunManager" selected="TestNG.Spirit_User_Acc_Sanity.StartAPool">
+    <configuration name="Spirit_User_Acc_Sanity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="spirit-test 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_User_Acc_Sanity" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Spirit_User_Acc_Sanity.Dashboard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
@@ -67,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_User_Acc_Sanity.Offers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_User_Acc_Sanity.StartAPool" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -77,25 +95,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Spirit_User_Acc_Sanity" />
-      <option name="METHOD_NAME" value="Offers" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Spirit_User_Acc_Sanity.Saver$_Club" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="spirit-test 3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_User_Acc_Sanity" />
-      <option name="METHOD_NAME" value="Saver$_Club" />
+      <option name="METHOD_NAME" value="StartAPool" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.StartAPool" />
+        <item itemvalue="TestNG.Spirit_User_Acc_Sanity" />
         <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Dashboard" />
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.logged_In" />
         <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Status" />
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Saver$_Club" />
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Offers" />
+        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.logged_In" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676066138129</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test">
+      <created>1676067924010</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676067924010</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

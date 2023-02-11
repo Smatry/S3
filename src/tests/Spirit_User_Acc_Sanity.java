@@ -9,11 +9,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pages.Spirit_User_Acc_page;
 
 public class Spirit_User_Acc_Sanity {
 
     WebDriver driver;
-    Spirit_User_Acc_Elements UserAccSearchElements;
+    Spirit_User_Acc_page AccPage;
 
        @BeforeMethod
         public void setUp() throws Exception {
@@ -32,7 +33,7 @@ public class Spirit_User_Acc_Sanity {
         driver.findElement(By.xpath("//button[@class='btn btn-primary btn-responsive']")).click();
         Thread.sleep(2000);
 
-        UserAccSearchElements = new Spirit_User_Acc_Elements(driver);
+        AccPage= new Spirit_User_Acc_page(driver);
 
 
     }
@@ -47,18 +48,13 @@ public class Spirit_User_Acc_Sanity {
       public void logged_In () throws Exception   {
 
       SoftAssert sa = new SoftAssert();
-
       String expectedURL = "https://qa01.nk.spirit.com/account/activity";
       String expectedTitle = "Spirit Airlines - Loyalty";
-
       String newUrl = driver.getCurrentUrl();
       String newTitle = driver.getTitle();
-
       System.out.println(newUrl);
       System.out.println(newTitle);
-
       Thread.sleep(5000);
-
       sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
       sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
@@ -71,7 +67,8 @@ public class Spirit_User_Acc_Sanity {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/dashboard";
         String expectedTitle = "Spirit Airlines - Activity";
-        UserAccSearchElements.dashboardCTA.click();
+        Thread.sleep(3000);
+        AccPage.DashboardLink();
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
         System.out.println(newUrl);
@@ -90,7 +87,8 @@ public class Spirit_User_Acc_Sanity {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/status";
         String expectedTitle = "Spirit Airlines - Status";
-        UserAccSearchElements.statusCTA.click();
+        Thread.sleep(3000);
+        AccPage.StatusLink();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -109,7 +107,8 @@ public class Spirit_User_Acc_Sanity {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/offers";
         String expectedTitle = "Spirit Airlines - Offers";
-        UserAccSearchElements.offersCTA.click();
+        Thread.sleep(3000);
+        AccPage.OffersLink();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -129,7 +128,8 @@ public class Spirit_User_Acc_Sanity {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/savings-club";
         String expectedTitle = "Spirit Airlines - Savers Club";
-        UserAccSearchElements.saversClubCTA.click();
+        Thread.sleep(3000);
+        AccPage.SaverClubLink();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -141,7 +141,25 @@ public class Spirit_User_Acc_Sanity {
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
+    @Test
+    public void StartAPool () throws Exception   {
 
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/create-pool";
+        String expectedTitle = "Spirit Airlines - Create Pool";
+        Thread.sleep(3000);
+        AccPage.StartAPool();
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(6000);
 
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
 
 }

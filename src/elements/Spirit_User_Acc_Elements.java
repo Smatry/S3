@@ -18,6 +18,9 @@ public class Spirit_User_Acc_Elements {
     //SaverClub
     @FindBy (id = "savings-club") public WebElement saversClubCTA;
 
+   //StartAPool
+    @FindBy (id = "create-pool") public WebElement startapoolCTA;
+
 
 
     public Spirit_User_Acc_Elements (WebDriver driver) {
