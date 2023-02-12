@@ -11,36 +11,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.Spirit_User_Acc_page;
 
-public class Spirit_User_Acc_Sanity  {
-
-    WebDriver driver;
-    Spirit_User_Acc_page AccPage;
-    Spirit_User_Acc_Elements  UserAccSearchElements;
-
-    @BeforeMethod
-    public void setUp() throws Exception {
-
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\96910\\Downloads\\chromedriver_win32\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get("https://qa01.nk.spirit.com/my-trips/find-trip");
-        Thread.sleep(3000);
-        driver.manage().window().maximize();
-        Thread.sleep(3000);
-        driver.findElement(By.id("onetrust-accept-btn-handler")).click();
-        Thread.sleep(3000);
-
-        AccPage = new Spirit_User_Acc_page(driver);
-        UserAccSearchElements = new Spirit_User_Acc_Elements(driver);
-
-
-
-    }
-
-    @AfterMethod
-    public void tearDown(){
-        driver.close();
-
-    }
+public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
 
       @Test
