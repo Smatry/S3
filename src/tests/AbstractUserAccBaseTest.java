@@ -1,5 +1,6 @@
 package tests;
 
+import Libraries.AppLib;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +12,8 @@ import pages.Spirit_User_Acc_page;
 
 public class AbstractUserAccBaseTest {
     WebDriver driver;
-    Spirit_User_Acc_page AccPage;
+
+    private AppLib app;
 
     @BeforeMethod
     public void setUp() throws Exception {
@@ -25,7 +27,8 @@ public class AbstractUserAccBaseTest {
         driver.findElement(By.id("onetrust-accept-btn-handler")).click();
         Thread.sleep(3000);
 
-        AccPage = new Spirit_User_Acc_page(driver);
+        app = new AppLib(driver);
+
 
 
     }
@@ -33,6 +36,11 @@ public class AbstractUserAccBaseTest {
     @AfterMethod
     public void tearDown(){
         driver.close();
+
+    }
+
+    public AppLib App() {
+        return app;
 
     }
 

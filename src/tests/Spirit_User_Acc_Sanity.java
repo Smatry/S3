@@ -1,15 +1,7 @@
 package tests;
 
-import Libraries.AppLib;
-import elements.Spirit_User_Acc_Elements;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.Spirit_User_Acc_page;
 
 public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
@@ -19,11 +11,11 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
           SoftAssert sa = new SoftAssert();
 
-          AccPage.EmailData("mikesmithFSgold@spirit.com");
+          App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
           Thread.sleep(2000);
-          AccPage.PasswordData("Brandy12$");
+          App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
           Thread.sleep(2000);
-          AccPage.SingIN();
+          App().Pages().SpiritUserAccPage().SingIN();
           Thread.sleep(2000);
 
           String expectedURL = "https://qa01.nk.spirit.com/account/activity";
@@ -45,11 +37,11 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        AccPage.EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
         Thread.sleep(2000);
-        AccPage.PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
-        AccPage.SingIN();
+        App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(2000);
 
 
@@ -57,7 +49,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String expectedURL = "https://qa01.nk.spirit.com/account/dashboard";
         String expectedTitle = "Spirit Airlines - Activity";
         Thread.sleep(3000);
-        AccPage.DashboardLink();
+        App().Pages().SpiritUserAccPage().DashboardLink();
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
         System.out.println(newUrl);
@@ -74,18 +66,18 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        AccPage.EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
         Thread.sleep(2000);
-        AccPage.PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
-        AccPage.SingIN();
+        App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(2000);
 
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/status";
         String expectedTitle = "Spirit Airlines - Status";
         Thread.sleep(3000);
-        AccPage.StatusLink();
+        App().Pages().SpiritUserAccPage().StatusLink();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -102,18 +94,18 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        AccPage.EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
         Thread.sleep(2000);
-        AccPage.PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
-        AccPage.SingIN();
+        App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(2000);
 
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/offers";
         String expectedTitle = "Spirit Airlines - Offers";
         Thread.sleep(3000);
-        AccPage.OffersLink();
+        App().Pages().SpiritUserAccPage().OffersLink();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -131,18 +123,18 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        AccPage.EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
         Thread.sleep(2000);
-        AccPage.PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
-        AccPage.SingIN();
+        App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(2000);
 
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/savings-club";
         String expectedTitle = "Spirit Airlines - Savers Club";
         Thread.sleep(3000);
-        AccPage.SaverClubLink();
+        App().Pages().SpiritUserAccPage().SaverClubLink();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -159,18 +151,18 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        AccPage.EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
         Thread.sleep(2000);
-        AccPage.PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
-        AccPage.SingIN();
+        App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(2000);
 
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/create-pool";
         String expectedTitle = "Spirit Airlines - My Pool";
         Thread.sleep(5000);
-        AccPage.StartAPool();
+        App().Pages().SpiritUserAccPage().StartAPool();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
