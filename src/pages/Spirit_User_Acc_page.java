@@ -15,7 +15,6 @@ public class Spirit_User_Acc_page {
 
     public void DashboardLink() {
         UserAccSearchElements.dashboardCTA.click();
-
     }
     public void StatusLink() {
         UserAccSearchElements.statusCTA.click();
@@ -29,8 +28,19 @@ public class Spirit_User_Acc_page {
         UserAccSearchElements.saversClubCTA.click();
     }
     public void StartAPool (){
-        UserAccSearchElements.startapoolCTA.click();
+        UserAccSearchElements.MyPoolCTA.click();
 
+    }
+
+    public void EmailData(String email) {
+        UserAccSearchElements.EmailAddress.sendKeys(email);
+    }
+
+    public void PasswordData(String password) {
+        UserAccSearchElements.PasswordData.sendKeys(password);
+    }
+    public void SingIN () {
+        UserAccSearchElements.SingInCTA.click();
     }
 
 }
