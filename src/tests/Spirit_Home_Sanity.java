@@ -255,6 +255,8 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/book/bundles";
         Thread.sleep(5000);
+
+
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
 
         String newUrl = App().Flow().getCurrentPageUrl();

@@ -375,7 +375,4 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
 
-
-
-
 }
