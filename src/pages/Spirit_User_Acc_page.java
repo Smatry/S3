@@ -16,6 +16,7 @@ public class Spirit_User_Acc_page {
     public void DashboardLink() {
         UserAccSearchElements.dashboardCTA.click();
     }
+
     public void StatusLink() {
         UserAccSearchElements.statusCTA.click();
     }
@@ -30,7 +31,7 @@ public class Spirit_User_Acc_page {
     }
 
 
-    public void StartAPool (){
+    public void StartAPool() {
         UserAccSearchElements.MyPoolCTA.click();
 
     }
@@ -46,7 +47,8 @@ public class Spirit_User_Acc_page {
 
 
     }
-    public void SingIN () {
+
+    public void SingIN() {
         UserAccSearchElements.SingInCTA.click();
     }
 
@@ -56,19 +58,28 @@ public class Spirit_User_Acc_page {
 
     }
 
-    public void BuyAGiftPointURL () {
+    public void BuyAGiftPointURL() {
         UserAccSearchElements.giftPoints.click();
 
 
     }
 
-    public void AddAnUpcomingTripURL () {
+    public void AddAnUpcomingTripURL() {
         UserAccSearchElements.upcomingTrip.click();
 
 
     }
-      public void ShopWithPartnersURL () {
-          UserAccSearchElements.shopWithPartners.click();
 
-      }
+    public void ShopWithPartnersURL() {
+        UserAccSearchElements.shopWithPartners.click();
+
+    }
+
+    public void AddAnUPTripURL() {
+        UserAccSearchElements.UpcomingTrip.click();
+    }
+
+    public void ManageTripURL() {
+        UserAccSearchElements.manageTrip.click();
+    }
 }

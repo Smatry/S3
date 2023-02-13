@@ -17,8 +17,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
+        Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/activity";
         String expectedTitle = "Spirit Airlines - Loyalty";
         Thread.sleep(5000);
@@ -43,8 +42,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/dashboard";
         String expectedTitle = "Spirit Airlines - Activity";
@@ -54,7 +51,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
-        Thread.sleep(5000);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -71,8 +67,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/status";
         String expectedTitle = "Spirit Airlines - Status";
@@ -83,7 +77,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
-        Thread.sleep(6000);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -100,8 +93,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/offers";
         String expectedTitle = "Spirit Airlines - Offers";
@@ -112,7 +103,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
-        Thread.sleep(6000);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -129,8 +119,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/savings-club";
         String expectedTitle = "Spirit Airlines - Savers Club";
@@ -141,7 +129,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
-        Thread.sleep(6000);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -158,8 +145,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/create-pool";
         String expectedTitle = "Spirit Airlines - My Pool";
@@ -170,7 +155,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
-        Thread.sleep(6000);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -187,8 +171,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/";
         String expectedTitle = "Spirit Airlines";
@@ -217,8 +199,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://storefront.points.com/free-spirit/en-US/buy?product=buy";
         String expectedTitle = "Buy points";
@@ -246,8 +226,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/retro-credit-request";
         String expectedTitle = "Buy points";
@@ -276,8 +254,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
-        Thread.sleep(2000);
-
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/s/our-partners";
         String expectedTitle = "Spirit Airlines";
@@ -294,6 +270,63 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
     }
+
+
+    @Test
+    public void Add_an_Upcoming_Trip () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/retro-credit-request";
+        String expectedTitle = "Spirit Airlines - Loyalty";
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().DashboardLink();
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().AddAnUPTripURL();
+        Thread.sleep(3000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+    }
+
+    @Test
+    public void Activity_Manage_Trip () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/check-in/reservation-summary";
+        String expectedTitle = "Manage Travel - Your Trip Summary | Spirit Airlines";
+        Thread.sleep(5000);
+        App().Pages().SpiritUserAccPage().ManageTripURL();
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(5000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+
+    }
+
 
 
 }

@@ -29,17 +29,25 @@ public class Spirit_User_Acc_Elements {
 
 
     //Book_A_Flight_Url
-    @FindBy (xpath = "//div//a[@data-track='book-flight']") public  WebElement bookAFlightUrl;
+    @FindBy (xpath = "//div//a[@data-track='book-flight']") public WebElement bookAFlightUrl;
 
     //Buy_or_Gift_Point_Url
-    @FindBy (xpath = "//div//a[@data-track='buy-gift-points']") public  WebElement giftPoints;
+    @FindBy (xpath = "//div//a[@data-track='buy-gift-points']") public WebElement giftPoints;
 
     //AddAnUpcomingTrip_Url
-    @FindBy (xpath = "//div//a[@data-track='add-upcoming-trip']") public  WebElement upcomingTrip;
+    @FindBy (xpath = "//div//a[@data-track='add-upcoming-trip']") public WebElement upcomingTrip;
 
     //ShopWithPartners
-
     @FindBy (xpath = "//div//a[@data-track='shop-with-partners']") public WebElement shopWithPartners;
+
+
+    //AddAnUpcomingTrip
+    @FindBy (xpath = "//a[@data-track='add-upcoming-trip']") public WebElement UpcomingTrip;
+
+    //ActivityManageTrip
+    @FindBy(xpath = "//td//a[@data-qa='row-action-link']") public WebElement manageTrip;
+
+
 
     public Spirit_User_Acc_Elements (WebDriver driver) {
         this.driver = driver;
