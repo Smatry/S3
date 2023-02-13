@@ -81,5 +81,13 @@ public class Spirit_User_Acc_page {
 
     public void ManageTripURL() {
         UserAccSearchElements.manageTrip.click();
+
     }
+
+    public void EditProfile () {
+        UserAccSearchElements.editProf.click();
+
+    }
+
+
 }
