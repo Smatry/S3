@@ -243,7 +243,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         App().Pages().SpiritHomePage().TripTypeSelect();
         Thread.sleep(2000);
         App().Pages().SpiritHomePage().SelectedOneWay();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         App().Pages().SpiritHomePage().ToStationDropDownMenu();
         Thread.sleep(5000);
         App().Pages().SpiritHomePage().ToStationSelected();
