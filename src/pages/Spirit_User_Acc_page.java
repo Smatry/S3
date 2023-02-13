@@ -67,5 +67,8 @@ public class Spirit_User_Acc_page {
 
 
     }
+      public void ShopWithPartnersURL () {
+          UserAccSearchElements.shopWithPartners.click();
 
+      }
 }

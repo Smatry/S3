@@ -37,6 +37,10 @@ public class Spirit_User_Acc_Elements {
     //AddAnUpcomingTrip_Url
     @FindBy (xpath = "//div//a[@data-track='add-upcoming-trip']") public  WebElement upcomingTrip;
 
+    //ShopWithPartners
+
+    @FindBy (xpath = "//div//a[@data-track='shop-with-partners']") public WebElement shopWithPartners;
+
     public Spirit_User_Acc_Elements (WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

@@ -120,7 +120,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
     }
 
     @Test
-    public void Saver$_Club() throws Exception {
+    public void Saver_$_Club() throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -149,7 +149,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
     }
 
     @Test
-    public void StartAPool() throws Exception {
+    public void Start_A_Pool() throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -237,7 +237,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
     @Test
-    public void AddAnUpcomingTrip () throws Exception {
+    public void Add_An_Up_coming_Trip () throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -265,6 +265,35 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
     }
 
+
+    @Test
+    public void Shop_With_Partners () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(2000);
+
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/s/our-partners";
+        String expectedTitle = "Spirit Airlines";
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().DashboardLink();
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().ShopWithPartnersURL();
+        Thread.sleep(3000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+    }
 
 
 }
