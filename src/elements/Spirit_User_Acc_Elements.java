@@ -28,6 +28,13 @@ public class Spirit_User_Acc_Elements {
     @FindBy (id = "my-pool") public WebElement MyPoolCTA;
 
 
+    //Book_A_Flight_Url
+    @FindBy (xpath = "//div//a[@data-track='book-flight']") public  WebElement bookAFlightUrl;
+
+    //Buy_or_Gift_Point
+    @FindBy (xpath = "//div//a[@data-track='buy-gift-points']") public  WebElement giftPoints;
+
+
 
     public Spirit_User_Acc_Elements (WebDriver driver) {
         this.driver = driver;

@@ -14,4 +14,9 @@ public class FlowLib {
 
     }
 
+    public String getCurrentPageTitle() {
+        return this.driver.getTitle();
+
+    }
+
 }

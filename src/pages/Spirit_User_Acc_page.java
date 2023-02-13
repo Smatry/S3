@@ -43,4 +43,16 @@ public class Spirit_User_Acc_page {
         UserAccSearchElements.SingInCTA.click();
     }
 
+    public void BookAFlightURL() {
+        UserAccSearchElements.bookAFlightUrl.click();
+
+
+    }
+
+    public void BuyAGiftPointURL () {
+        UserAccSearchElements.giftPoints.click();
+
+
+    }
+
 }
