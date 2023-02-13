@@ -26,7 +26,10 @@ public class Spirit_User_Acc_page {
 
     public void SaverClubLink() {
         UserAccSearchElements.saversClubCTA.click();
+
     }
+
+
     public void StartAPool (){
         UserAccSearchElements.MyPoolCTA.click();
 
@@ -34,10 +37,14 @@ public class Spirit_User_Acc_page {
 
     public void EmailData(String email) {
         UserAccSearchElements.EmailAddress.sendKeys(email);
+
+
     }
 
     public void PasswordData(String password) {
         UserAccSearchElements.PasswordData.sendKeys(password);
+
+
     }
     public void SingIN () {
         UserAccSearchElements.SingInCTA.click();
@@ -51,6 +58,12 @@ public class Spirit_User_Acc_page {
 
     public void BuyAGiftPointURL () {
         UserAccSearchElements.giftPoints.click();
+
+
+    }
+
+    public void AddAnUpcomingTripURL () {
+        UserAccSearchElements.upcomingTrip.click();
 
 
     }

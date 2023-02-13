@@ -31,10 +31,11 @@ public class Spirit_User_Acc_Elements {
     //Book_A_Flight_Url
     @FindBy (xpath = "//div//a[@data-track='book-flight']") public  WebElement bookAFlightUrl;
 
-    //Buy_or_Gift_Point
+    //Buy_or_Gift_Point_Url
     @FindBy (xpath = "//div//a[@data-track='buy-gift-points']") public  WebElement giftPoints;
 
-
+    //AddAnUpcomingTrip_Url
+    @FindBy (xpath = "//div//a[@data-track='add-upcoming-trip']") public  WebElement upcomingTrip;
 
     public Spirit_User_Acc_Elements (WebDriver driver) {
         this.driver = driver;

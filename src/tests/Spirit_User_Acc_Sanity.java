@@ -234,5 +234,37 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
     }
+    @Test
+    public void AddAnUpcomingTrip () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(2000);
+
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/retro-credit-request";
+        String expectedTitle = "Buy points";
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().DashboardLink();
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().AddAnUpcomingTripURL();
+        Thread.sleep(3000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+    }
+
+
+
 }
