@@ -24,6 +24,8 @@ public class AbstractHomeBaseTest {
         Thread.sleep(2000);
         driver.findElement(By.id("onetrust-accept-btn-handler")).click();
         Thread.sleep(2000);
+        driver.findElement(By.xpath("//button//span[@aria-hidden='true']")).click();
+        Thread.sleep(2000);
 
         app = new AppLib(driver);
 
