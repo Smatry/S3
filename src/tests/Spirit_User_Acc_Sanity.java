@@ -26,9 +26,10 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         System.out.println(newUrl);
         System.out.println(newTitle);
         Thread.sleep(5000);
+
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
-        Thread.sleep(5000);
+
 
     }
 
@@ -51,6 +52,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -77,6 +80,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -103,6 +108,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -129,6 +136,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -155,6 +164,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -183,6 +194,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -211,6 +224,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -238,6 +253,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -266,6 +283,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -294,6 +313,8 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
+        Thread.sleep(5000);
+
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
