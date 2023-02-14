@@ -29,8 +29,6 @@ public class AbstractHomeBaseTest {
         driver.findElement(By.xpath("//button//span[@aria-hidden='true']")).click();
         Thread.sleep(2000);
 
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-
         app = new AppLib(driver);
 
     }

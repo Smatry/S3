@@ -3,7 +3,6 @@ package tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import java.util.ArrayList;
@@ -269,7 +268,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
 
 
-    @Ignore
+    @Test
     public void Landing_On_The_Bunbles_Page() throws Exception {
 
         SoftAssert sa = new SoftAssert();
