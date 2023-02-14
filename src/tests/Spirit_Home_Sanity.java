@@ -3,6 +3,7 @@ package tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import java.util.ArrayList;
@@ -239,7 +240,36 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
     }
 
-    @Test
+    @Test public void Create_An_Acc  () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        driver.findElement(By.xpath("//a[@data-qa='home-page.common-header-login']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//button[@class='btn btn-secondary btn-responsive w-100']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.id("firstName")).sendKeys("John");
+        Thread.sleep(2000);
+        driver.findElement(By.id("lastName")).sendKeys("Due");
+        Thread.sleep(2000);
+        driver.findElement(By.id("free-spirit-account-enrollment-dob")).sendKeys("01/01/2000");
+        Thread.sleep(2000);
+        driver.findElement(By.id("emailAddress")).sendKeys("BikesmithFSbase@spirit.com ");
+        Thread.sleep(2000);
+        driver.findElement(By.id("passwordFieldId")).sendKeys("Brandy12$");
+        Thread.sleep(3000);
+        driver.findElement(By.id("agreeConditions")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//div//button[@data-qa='fs-sign-up-button']")).click();
+        Thread.sleep(2000);
+
+
+    }
+
+
+
+
+    @Ignore
     public void Landing_On_The_Bunbles_Page() throws Exception {
 
         SoftAssert sa = new SoftAssert();

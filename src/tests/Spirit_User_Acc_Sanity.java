@@ -439,7 +439,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(5000);
         App().Pages().SpiritUserAccPage().EditProfile();
         Thread.sleep(3000);
-
         App().Pages().SpiritUserAccPage().Edit();
         Thread.sleep(3000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
@@ -450,7 +449,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SavePersonInfo();
         Thread.sleep(2000);
-
         String newUrl = App().Flow().getCurrentPageUrl();
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
