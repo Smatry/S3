@@ -364,6 +364,20 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(5000);
         App().Pages().SpiritUserAccPage().EditProfile();
         Thread.sleep(3000);
+
+
+
+        driver.findElement(By.id("personal")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.id("middleName")).sendKeys("Jn");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//input[@formcontrolname='address1']")).sendKeys("888 Pratt St");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//input[@formcontrolname='cityCode']")).sendKeys("Hollywood");
+        Thread.sleep(3000);
+
+
+
         String newUrl = App().Flow().getCurrentPageUrl();
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
