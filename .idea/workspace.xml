@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1318b327-9d80-4432-9184-5bbbdef3baeb" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/AbstractHomeBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AbstractHomeBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +47,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Spirit_User_Acc_Sanity.Activity_Manage_Trip">
+  <component name="RunManager" selected="TestNG.Spirit_User_Acc_Sanity.Edit_Profile_Adding_Info">
     <configuration name="Spirit_Home_Sanity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
@@ -140,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Edit_Profile_Adding_Info" />
         <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Activity_Manage_Trip" />
         <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Dashboard_Shop_With_Partners" />
         <item itemvalue="TestNG.Spirit_User_Acc_Sanity" />
         <item itemvalue="TestNG.Spirit_Home_Sanity" />
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Edit_Profile_Adding_Info" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676398934213</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="test">
+      <created>1676404791456</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1676404791456</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
