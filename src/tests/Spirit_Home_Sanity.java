@@ -1,6 +1,7 @@
 package tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -58,7 +59,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
     @Test
-    public void  Free_Spirit_Url () throws Exception {
+    public void Free_Spirit_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         String expectedURL = "https://qa01.nk.spirit.com/free-spirit";
@@ -67,7 +68,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
 
-        sa.assertEquals(newUrl,expectedURL,"Verify URL of new page");
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
     }
 
@@ -102,7 +103,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
     @Test
-    public void Saver_Club_Url () throws Exception {
+    public void Saver_Club_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         String expectedURL = "https://qa01.nk.spirit.com/savers-club";
@@ -113,7 +114,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
-       }
+    }
 
 
     @Test
@@ -137,7 +138,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         sa.assertTrue(arr1.equals(arr2));
 
-        }
+    }
 
     @Test
     public void drop_Down_To() throws Exception {
@@ -161,6 +162,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         sa.assertTrue(arr1.equals(arr2));
 
     }
+
     @Test
     public void Spirit_JetBlue_Url() throws Exception {
 
@@ -175,7 +177,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
 
-      }
+    }
 
     @Test
     public void bank_of_america_Url() throws Exception {
@@ -190,9 +192,10 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         System.out.println(newUrl);
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
-        }
+    }
+
     @Test
-    public void Landing_OnTheBooking_FlightPage () throws Exception {
+    public void Landing_OnTheBooking_FlightPage() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         String expectedURL = "https://qa01.nk.spirit.com/book/flights";
@@ -211,10 +214,10 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
-       }
+    }
 
     @Test
-    public void Booking_Flight_Confirm () throws Exception {
+    public void Booking_Flight_Confirm() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         String expectedURL = "https://qa01.nk.spirit.com/book/flights";
@@ -235,8 +238,9 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
     }
+
     @Test
-    public void Landing_On_The_Bunbles_Page () throws Exception {
+    public void Landing_On_The_Bunbles_Page() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
@@ -263,7 +267,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         System.out.println(newUrl);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
-     }
 
+    }
 
 }

@@ -267,7 +267,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/s/our-partners";
         String expectedTitle = "Spirit Airlines";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         App().Pages().SpiritUserAccPage().DashboardLink();
         Thread.sleep(3000);
         App().Pages().SpiritUserAccPage().ShopWithPartnersURL();
@@ -326,7 +326,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String expectedTitle = "Manage Travel - Your Trip Summary | Spirit Airlines";
         Thread.sleep(5000);
         App().Pages().SpiritUserAccPage().ManageTripURL();
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         String newUrl = App().Flow().getCurrentPageUrl();
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
@@ -412,6 +412,36 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(3000);
         App().Pages().SpiritUserAccPage().ApplyMasterCard();
         Thread.sleep(3000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(5000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Edit_Profile_Adding_Info () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSsliver@spirit.com");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/edit-profile";
+        String expectedTitle = "Spirit Airlines - Edit Profile";
+        Thread.sleep(5000);
+        App().Pages().SpiritUserAccPage().EditProfile();
+        Thread.sleep(3000);
+
+
+
         String newUrl = App().Flow().getCurrentPageUrl();
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);

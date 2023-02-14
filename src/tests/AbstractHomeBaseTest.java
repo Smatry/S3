@@ -2,6 +2,7 @@ package tests;
 
 import Libraries.AppLib;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -27,6 +28,8 @@ public class AbstractHomeBaseTest {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button//span[@aria-hidden='true']")).click();
         Thread.sleep(2000);
+
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
 
         app = new AppLib(driver);
 
