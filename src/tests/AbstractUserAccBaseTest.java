@@ -2,6 +2,7 @@ package tests;
 
 import Libraries.AppLib;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -12,6 +13,7 @@ import pages.Spirit_User_Acc_page;
 
 public class AbstractUserAccBaseTest {
     WebDriver driver;
+
 
     private AppLib app;
 

@@ -1,6 +1,7 @@
 package tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -353,7 +354,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSsliver@spirit.com");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
         Thread.sleep(2000);
@@ -364,19 +365,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(5000);
         App().Pages().SpiritUserAccPage().EditProfile();
         Thread.sleep(3000);
-
-
-
-        driver.findElement(By.id("personal")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.id("middleName")).sendKeys("Jn");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//input[@formcontrolname='address1']")).sendKeys("888 Pratt St");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//input[@formcontrolname='cityCode']")).sendKeys("Hollywood");
-        Thread.sleep(3000);
-
-
 
         String newUrl = App().Flow().getCurrentPageUrl();
         String newTitle = App().Flow().getCurrentPageTitle();
