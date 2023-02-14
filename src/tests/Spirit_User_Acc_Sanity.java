@@ -169,7 +169,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
     }
 
     @Test
-    public void Book_A_Flight_Url() throws Exception {
+    public void Dashboard_Book_A_Flight_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -198,7 +198,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
     }
 
     @Test
-    public void Buy_or_Gift_Point () throws Exception {
+    public void Dashboard_Buy_or_Gift_Point () throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -226,7 +226,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
     @Test
-    public void Add_An_Up_coming_Trip () throws Exception {
+    public void Dashboard_Add_An_Up_coming_Trip () throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -255,7 +255,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
 
     @Test
-    public void Shop_With_Partners () throws Exception {
+    public void Dashboard_Shop_With_Partners () throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -393,5 +393,35 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
+
+    @Test
+    public void My_Pool_Apply_MasterCard () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        String expectedURL = "https://secure.bankofamerica.com/apply-credit-cards/public/icai-single/#/info/";
+        String expectedTitle = "Your Application";
+        Thread.sleep(5000);
+        App().Pages().SpiritUserAccPage().StartAPool();
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().ApplyMasterCard();
+        Thread.sleep(3000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(5000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
 
 }

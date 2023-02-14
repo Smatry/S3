@@ -105,6 +105,11 @@ public class Spirit_User_Acc_page {
 
 
     }
+    public void ApplyMasterCard () {
+        UserAccSearchElements.applyMasterCard.click();
+
+
+    }
 
 
 }

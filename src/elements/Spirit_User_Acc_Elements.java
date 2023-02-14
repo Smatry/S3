@@ -50,8 +50,10 @@ public class Spirit_User_Acc_Elements {
     @FindBy(id = "edit-profile-hyperlink") public WebElement editProf;
 
     //ManageMyPool
-
     @FindBy(xpath = "//a[@data-qa='manage-my-pool-link']") public WebElement managePool;
+
+    //MyPoolApplyMasterCard
+    @FindBy(id = "mastercardUpsellButton") public WebElement applyMasterCard;
 
 
 
