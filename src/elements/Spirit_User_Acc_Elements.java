@@ -56,6 +56,13 @@ public class Spirit_User_Acc_Elements {
     @FindBy(id = "mastercardUpsellButton") public WebElement applyMasterCard;
 
 
+    //Edit_Profile_Adding_Info
+    @FindBy(id = "personal") public WebElement personalCTA;
+    @FindBy(id = "middleName") public WebElement mdName;
+    @FindBy(id = "address2") public WebElement address2;
+    @FindBy(id = "save-personal-info") public WebElement saveInfo;
+
+
 
     public Spirit_User_Acc_Elements (WebDriver driver) {
         this.driver = driver;

@@ -111,5 +111,23 @@ public class Spirit_User_Acc_page {
 
     }
 
+    public void Edit ()  {
+        UserAccSearchElements.personalCTA.click();
+
+    }
+
+    public void MidlName (String mdName) {
+        UserAccSearchElements.mdName.click();
+    }
+
+    public void Address2 (String address2) {
+        UserAccSearchElements.address2.click();
+
+    }
+    public void SavePersonInfo () {
+        UserAccSearchElements.saveInfo.click();
+
+
+    }
 
 }
