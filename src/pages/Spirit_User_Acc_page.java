@@ -14,15 +14,22 @@ public class Spirit_User_Acc_page {
     }
 
     public void DashboardLink() {
+
+
         UserAccSearchElements.dashboardCTA.click();
     }
 
     public void StatusLink() {
+
+
         UserAccSearchElements.statusCTA.click();
     }
 
     public void OffersLink() {
+
         UserAccSearchElements.offersCTA.click();
+
+
     }
 
     public void SaverClubLink() {
@@ -50,6 +57,8 @@ public class Spirit_User_Acc_page {
 
     public void SingIN() {
         UserAccSearchElements.SingInCTA.click();
+
+
     }
 
     public void BookAFlightURL() {
@@ -77,6 +86,8 @@ public class Spirit_User_Acc_page {
 
     public void AddAnUPTripURL() {
         UserAccSearchElements.UpcomingTrip.click();
+
+
     }
 
     public void ManageTripURL() {
@@ -86,6 +97,12 @@ public class Spirit_User_Acc_page {
 
     public void EditProfile () {
         UserAccSearchElements.editProf.click();
+
+    }
+
+    public void ManagePool () {
+        UserAccSearchElements.managePool.click();
+
 
     }
 

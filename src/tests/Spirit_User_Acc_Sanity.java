@@ -146,7 +146,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
     }
 
     @Test
-    public void Start_A_Pool() throws Exception {
+    public void My_Pool() throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -156,7 +156,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(5000);
-        String expectedURL = "https://qa01.nk.spirit.com/account/create-pool";
+        String expectedURL = "https://qa01.nk.spirit.com/account/my-pool";
         String expectedTitle = "Spirit Airlines - My Pool";
         Thread.sleep(5000);
         App().Pages().SpiritUserAccPage().StartAPool();
@@ -366,6 +366,34 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         App().Pages().SpiritUserAccPage().EditProfile();
         Thread.sleep(3000);
 
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(5000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+    @Test
+    public void Manage_My_Pool() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/manage-pool";
+        String expectedTitle = "Spirit Airlines - Manage Pool";
+        Thread.sleep(5000);
+        App().Pages().SpiritUserAccPage().StartAPool();
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().ManagePool();
+        Thread.sleep(3000);
         String newUrl = App().Flow().getCurrentPageUrl();
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);

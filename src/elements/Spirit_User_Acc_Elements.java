@@ -49,6 +49,10 @@ public class Spirit_User_Acc_Elements {
     //EditProfile
     @FindBy(id = "edit-profile-hyperlink") public WebElement editProf;
 
+    //ManageMyPool
+
+    @FindBy(xpath = "//a[@data-qa='manage-my-pool-link']") public WebElement managePool;
+
 
 
     public Spirit_User_Acc_Elements (WebDriver driver) {
