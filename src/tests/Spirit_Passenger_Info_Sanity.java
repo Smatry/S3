@@ -24,21 +24,20 @@ public class Spirit_Passenger_Info_Sanity {
         driver.findElement(By.id("onetrust-accept-btn-handler")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button//span[@aria-hidden='true']")).click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
 
         driver.findElement(By.xpath("//i[@class='far fa-chevron-down ng-star-inserted']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//label[@data-qa='one-way']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//label[@class='toStation ng-tns-c165-3']")).click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//p[@class='station-picker-dropdown__station-name ng-star-inserted']")).click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']")).click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//div//p[@class='p-grid__pricing-value ng-star-inserted']")).click();
         Thread.sleep(4000);
-
         ((JavascriptExecutor)driver).executeScript("scroll(0,600)");
         Thread.sleep(4000);
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
@@ -62,6 +61,25 @@ public class Spirit_Passenger_Info_Sanity {
         String newUrl = driver.getCurrentUrl();
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
+     }
+
+     @Test
+    public void Reset_Password_Url () throws  Exception {
+         SoftAssert sa = new SoftAssert();
+         Thread.sleep(2000);
+         String expectedURL = "https://qa01.nk.spirit.com/book/passenger";
+         String expectedTitle = "Retrieve Password | Spirit Airlines";
+
+         driver.findElement(By.xpath("//button[@class='d-block ml-auto btn btn-link btn-sm pt-0 ng-star-inserted']")).click();
+         Thread.sleep(2000);
+
+         String newUrl = driver.getCurrentUrl();
+         String newTitle = driver.getTitle();
+         System.out.println(newUrl);
+         System.out.println(newTitle);
+
+         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
      }
 
