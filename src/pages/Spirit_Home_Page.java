@@ -149,6 +149,10 @@ public class Spirit_Home_Page {
         homeSearchElements.singUp.click();
     }
 
+    public void WithStandardPricing () {
+        homeSearchElements.standardPricing.click();
+
+    }
 
 
 }

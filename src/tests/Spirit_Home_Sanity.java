@@ -288,7 +288,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         ((JavascriptExecutor)driver).executeScript("scroll(0,600)");
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
+        App().Pages().SpiritHomePage().WithStandardPricing();
         Thread.sleep(6000);
         String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);

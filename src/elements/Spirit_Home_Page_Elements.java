@@ -48,12 +48,14 @@ public class Spirit_Home_Page_Elements {
      //Bank_Of_America_Url
      @FindBy(xpath = "//div//a[@class='cc-button-credit-card text-uppercase display-desktop text-center btn btn-primary']") public WebElement BankOfAmSTA;
 
-     //Landing_OnTheBooking_FlightPage
+     //Landing_OnThePassenger_Page
      @FindBy(xpath = "//label[@class='toStation ng-tns-c165-3']") public WebElement ToStationDropDown;
 
      @FindBy(xpath = "//p[@class='station-picker-dropdown__station-name ng-star-inserted']") public WebElement ToStation;
 
      @FindBy(xpath = "//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']") public WebElement search;
+
+     @FindBy(xpath = "//section//div//button[@data-qa='pricing-breakdown-standard-cta']") public WebElement standardPricing;
 
 
      // Booking_Flight_Confirm
