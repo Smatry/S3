@@ -118,26 +118,26 @@ public class Spirit_Home_Page {
     }
 
     public void FirsName (String firstName) {
-        homeSearchElements.firstName.click();
+        homeSearchElements.firstName.sendKeys(firstName);
     }
 
     public void LastName (String lastName) {
-        homeSearchElements.lastName.click();
+        homeSearchElements.lastName.sendKeys(lastName);
 
     }
 
     public void DOB (String dayOfBirth) {
-        homeSearchElements.dayOfBirth.click();
+        homeSearchElements.dayOfBirth.sendKeys(dayOfBirth);
 
     }
 
     public void Email (String email) {
-        homeSearchElements.email.click();
+        homeSearchElements.email.sendKeys(email);
 
     }
 
     public void Password (String password) {
-        homeSearchElements.password.click();
+        homeSearchElements.password.sendKeys(password);
 
 
     }

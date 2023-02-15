@@ -249,24 +249,23 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(2000);
         App().Pages().SpiritHomePage().FirsName("John");
         Thread.sleep(2000);
-        driver.findElement(By.id("lastName")).sendKeys("Due");
+        App().Pages().SpiritHomePage().LastName("Due");
         Thread.sleep(2000);
-        driver.findElement(By.id("free-spirit-account-enrollment-dob")).sendKeys("01/01/2000");
+        App().Pages().SpiritHomePage().DOB("01/01/2000");
         Thread.sleep(2000);
-        driver.findElement(By.id("emailAddress")).sendKeys("BikesmithFSbase@spirit.com ");
+        App().Pages().SpiritHomePage().Email("BikesmithFSbase@spirit.com ");
         Thread.sleep(2000);
-        driver.findElement(By.id("passwordFieldId")).sendKeys("Brandy12$");
+        App().Pages().SpiritHomePage().Password("Brandy12$");
         Thread.sleep(4000);
+
         driver.findElement(By.xpath("//div//input[@class='checkBox ng-untouched ng-dirty ng-invalid']")).click();
         Thread.sleep(4000);
-        driver.findElement(By.xpath("//div//button[@data-qa='fs-sign-up-button']")).click();
+
+        App().Pages().SpiritHomePage().SingUp();
         Thread.sleep(2000);
 
 
     }
-
-
-
 
     @Test
     public void Landing_On_The_Bunbles_Page() throws Exception {
