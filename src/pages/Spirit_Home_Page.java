@@ -72,19 +72,19 @@ public class Spirit_Home_Page {
         return homeSearchElements.getDropDownToAirport;
 
     }
-    // Spirit_JetBlue_url
+
     public void SpiritJetBlueUrl () {
         homeSearchElements.SpiritJetBlueCTA.click();
 
     }
 
-    // Bank_Of_America_Link
+
     public void BankOfAmericaUrl() {
         homeSearchElements.BankOfAmSTA.click();
 
     }
 
-    //Landing_OnTheBooking_FlightPage
+
     public void ToStationDropDownMenu() {
         homeSearchElements.ToStationDropDown.click();
 
@@ -99,10 +99,54 @@ public class Spirit_Home_Page {
         homeSearchElements.search.click();
 
     }
-    // Booking_Flight_Confirm
+
     public void FlightConfirmed() {
         homeSearchElements.Confirm.click();
 
     }
+
+    public void SingInHeader () {
+        homeSearchElements.singInHeader.click();
+
+    }
+
+    public void CreateAnAcc ()  {
+        homeSearchElements.createAnAccCTA.click();
+
+    }
+
+    public void FirsName (String firstName) {
+        homeSearchElements.firstName.click();
+    }
+
+    public void LastName (String lastName) {
+        homeSearchElements.lastName.click();
+
+    }
+
+    public void DOB (String dayOfBirth) {
+        homeSearchElements.dayOfBirth.click();
+
+    }
+
+    public void Email (String email) {
+        homeSearchElements.email.click();
+
+    }
+
+    public void Password (String password) {
+        homeSearchElements.password.click();
+
+
+    }
+    public void CheckBox () {
+        homeSearchElements.checkBox.click();
+
+    }
+    public void SingUp () {
+        homeSearchElements.singUp.click();
+    }
+
+
 
 }

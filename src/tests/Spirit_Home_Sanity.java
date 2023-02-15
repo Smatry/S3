@@ -256,9 +256,9 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         driver.findElement(By.id("emailAddress")).sendKeys("BikesmithFSbase@spirit.com ");
         Thread.sleep(2000);
         driver.findElement(By.id("passwordFieldId")).sendKeys("Brandy12$");
-        Thread.sleep(3000);
-        driver.findElement(By.id("agreeConditions")).click();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
+        driver.findElement(By.xpath("//div//input[@class='checkBox ng-untouched ng-dirty ng-invalid']")).click();
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//div//button[@data-qa='fs-sign-up-button']")).click();
         Thread.sleep(2000);
 

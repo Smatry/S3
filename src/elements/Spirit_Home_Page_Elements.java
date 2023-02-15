@@ -59,6 +59,16 @@ public class Spirit_Home_Page_Elements {
      // Booking_Flight_Confirm
      @FindBy(xpath = "//div//p[@class='p-grid__pricing-value ng-star-inserted']") public WebElement Confirm;
 
+     //Create_An_Acc
+     @FindBy(xpath = "//a[@data-qa='home-page.common-header-login']") public WebElement singInHeader;
+     @FindBy(xpath = "//div//button[@class='btn btn-secondary btn-responsive w-100']") public WebElement createAnAccCTA;
+     @FindBy(id = "firstName") public WebElement firstName;
+     @FindBy(id ="lastName") public WebElement lastName;
+     @FindBy(id = "free-spirit-account-enrollment-dob") public WebElement dayOfBirth;
+     @FindBy(id = "emailAddress") public  WebElement email;
+     @FindBy(id = "passwordFieldId") public WebElement password;
+     @FindBy (xpath = "//div//input[@class='checkBox ng-untouched ng-dirty ng-invalid']") public WebElement checkBox;
+     @FindBy (xpath = "//div//button[@data-qa='fs-sign-up-button']") public WebElement singUp;
 
      public Spirit_Home_Page_Elements(WebDriver driver) {
          this.driver = driver;
