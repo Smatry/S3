@@ -105,6 +105,8 @@ public class Spirit_Home_Page {
 
     }
 
+
+
     public void SingInHeader () {
         homeSearchElements.singInHeader.click();
 

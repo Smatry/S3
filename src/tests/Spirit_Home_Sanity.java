@@ -243,11 +243,11 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        driver.findElement(By.xpath("//a[@data-qa='home-page.common-header-login']")).click();
+        App().Pages().SpiritHomePage().SingInHeader();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//button[@class='btn btn-secondary btn-responsive w-100']")).click();
+        App().Pages().SpiritHomePage().CreateAnAcc();
         Thread.sleep(2000);
-        driver.findElement(By.id("firstName")).sendKeys("John");
+        App().Pages().SpiritHomePage().FirsName("John");
         Thread.sleep(2000);
         driver.findElement(By.id("lastName")).sendKeys("Due");
         Thread.sleep(2000);
