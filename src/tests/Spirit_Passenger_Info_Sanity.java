@@ -38,7 +38,7 @@ public class Spirit_Passenger_Info_Sanity {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//div//p[@class='p-grid__pricing-value ng-star-inserted']")).click();
         Thread.sleep(4000);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,600)");
+        ((JavascriptExecutor) driver).executeScript("scroll(0,600)");
         Thread.sleep(4000);
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
         Thread.sleep(8000);
@@ -47,32 +47,52 @@ public class Spirit_Passenger_Info_Sanity {
     }
 
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         driver.close();
 
     }
 
     @Test
-    public void Pass_Info_Page () throws  Exception {
+    public void Reset_Password_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
         String expectedURL = "https://qa01.nk.spirit.com/book/passenger";
+        String expectedTitle = "Retrieve Password | Spirit Airlines";
+        driver.findElement(By.xpath("//button[@class='d-block ml-auto btn btn-link btn-sm pt-0 ng-star-inserted']")).click();
+        Thread.sleep(2000);
         String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
-     }
-
+    }
      @Test
-    public void Reset_Password_Url () throws  Exception {
+     public void Learn_More_PoUp () throws Exception  {
+
          SoftAssert sa = new SoftAssert();
          Thread.sleep(2000);
-         String expectedURL = "https://qa01.nk.spirit.com/book/passenger";
-         String expectedTitle = "Retrieve Password | Spirit Airlines";
+         String expectedURL = "https://www.tsa.gov/travel/security-screening/identification";
+         driver.findElement(By.xpath("//a[@href='javascript:void(0)']")).click();
+         Thread.sleep(5000);
+         String newUrl = driver.getCurrentUrl();
+         System.out.println(newUrl);
 
-         driver.findElement(By.xpath("//button[@class='d-block ml-auto btn btn-link btn-sm pt-0 ng-star-inserted']")).click();
+         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+
+     }
+     @Test
+     public void Acceptable_Form_ofID_Url () throws  Exception {
+
+         SoftAssert sa = new SoftAssert();
          Thread.sleep(2000);
-
+         String expectedURL = "https://www.tsa.gov/travel/security-screening/identification";
+         String expectedTitle = "Identification | Transportation Security Administration";
+         driver.navigate().to("https://www.tsa.gov/travel/security-screening/identification");
+         Thread.sleep(5000);
          String newUrl = driver.getCurrentUrl();
          String newTitle = driver.getTitle();
          System.out.println(newUrl);
@@ -83,4 +103,8 @@ public class Spirit_Passenger_Info_Sanity {
 
      }
 
+
 }
+
+
+
