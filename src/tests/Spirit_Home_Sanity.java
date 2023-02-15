@@ -264,11 +264,10 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         App().Pages().SpiritHomePage().SingUp();
         Thread.sleep(2000);
 
-
     }
 
     @Test
-    public void Landing_On_The_Bunbles_Page() throws Exception {
+    public void Landing_On_The_Passenger_Page() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
@@ -283,15 +282,14 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         App().Pages().SpiritHomePage().SearchButton();
         Thread.sleep(5000);
         App().Pages().SpiritHomePage().FlightConfirmed();
-
         Thread.sleep(5000);
-        String expectedURL = "https://qa01.nk.spirit.com/book/bundles";
+        String expectedURL = "https://qa01.nk.spirit.com/book/passenger";
         Thread.sleep(5000);
 
         ((JavascriptExecutor)driver).executeScript("scroll(0,600)");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
 
