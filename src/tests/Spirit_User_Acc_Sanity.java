@@ -181,7 +181,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/";
         String expectedTitle = "Spirit Airlines";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         App().Pages().SpiritUserAccPage().DashboardLink();
         Thread.sleep(3000);
         App().Pages().SpiritUserAccPage().BookAFlightURL();
