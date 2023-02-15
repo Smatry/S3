@@ -289,7 +289,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         ((JavascriptExecutor)driver).executeScript("scroll(0,600)");
         Thread.sleep(2000);
         App().Pages().SpiritHomePage().WithStandardPricing();
-        Thread.sleep(6000);
+        Thread.sleep(8000);
         String newUrl = App().Flow().getCurrentPageUrl();
         System.out.println(newUrl);
 
