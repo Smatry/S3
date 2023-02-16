@@ -15,51 +15,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Spirit_Passenger_Info_Sanity {
+public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest  {
 
-    WebDriver driver;
-    Spirit_Passenger_Info_Page PassengerPage;
-
-    @BeforeMethod
-    public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\96910\\Downloads\\chromedriver_win32\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get("https://qa01.nk.spirit.com/");
-        Thread.sleep(2000);
-        driver.manage().window().maximize();
-        Thread.sleep(2000);
-        driver.findElement(By.id("onetrust-accept-btn-handler")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button//span[@aria-hidden='true']")).click();
-        Thread.sleep(2000);
-
-        driver.findElement(By.xpath("//i[@class='far fa-chevron-down ng-star-inserted']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//label[@data-qa='one-way']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//label[@class='toStation ng-tns-c165-3']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//p[@class='station-picker-dropdown__station-name ng-star-inserted']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//p[@class='p-grid__pricing-value ng-star-inserted']")).click();
-        Thread.sleep(4000);
-        ((JavascriptExecutor) driver).executeScript("scroll(0,600)");
-        Thread.sleep(4000);
-        driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
-        Thread.sleep(8000);
-
-        PassengerPage = new Spirit_Passenger_Info_Page(driver);
-
-
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        driver.close();
-
-    }
 
     @Test
     public void Reset_Password_Url() throws Exception {
