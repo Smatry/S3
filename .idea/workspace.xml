@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1318b327-9d80-4432-9184-5bbbdef3baeb" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/pages/Spirit_Passenger_Info_Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Spirit_Passenger_Info_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Spirit_Passenger_Info_Elements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Passenger_Info_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Passenger_Info_Sanity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,26 +47,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Spirit_Passenger_Info_Sanity.Phone_Number_Country_Code_DD">
-    <configuration name="Spirit_Home_Sanity.drop_Down_To" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="spirit-test 3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
-      <option name="METHOD_NAME" value="drop_Down_To" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Spirit_Passenger_Info_Sanity.Country_DD" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Spirit_Passenger_Info_Sanity">
+    <configuration name="Spirit_Passenger_Info_Sanity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +58,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Spirit_Passenger_Info_Sanity" />
-      <option name="METHOD_NAME" value="Country_DD" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spirit_Passenger_Info_Sanity.Learn_More_PoUp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="spirit-test 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Passenger_Info_Sanity" />
+      <option name="METHOD_NAME" value="Learn_More_PoUp" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -104,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_Passenger_Info_Sanity.State_DD" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Passenger_Info_Sanity.Reset_Password_Url" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Spirit_Passenger_Info_Sanity" />
-      <option name="METHOD_NAME" value="State_DD" />
+      <option name="METHOD_NAME" value="Reset_Password_Url" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.Phone_Number_Country_Code_DD" />
+        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity" />
         <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.Title_DD" />
-        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.Country_DD" />
-        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.State_DD" />
-        <item itemvalue="TestNG.Spirit_Home_Sanity.drop_Down_To" />
+        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.Learn_More_PoUp" />
+        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.Reset_Password_Url" />
+        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.Phone_Number_Country_Code_DD" />
       </list>
     </recent_temporary>
   </component>
@@ -158,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675526990859</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1675886300697</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1675886300697</updated>
     </task>
     <task id="LOCAL-00003" summary="test">
       <created>1675953839000</created>
@@ -502,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676553403251</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="test">
+      <created>1676583154484</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1676583154484</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

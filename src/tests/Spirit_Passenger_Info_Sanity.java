@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pages.Spirit_Passenger_Info_Page;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,7 +20,7 @@ import java.util.List;
 public class Spirit_Passenger_Info_Sanity {
 
     WebDriver driver;
-    Spirit_Passenger_Info_Elements PassSearchElement;
+    Spirit_Passenger_Info_Page PassengerPage;
 
     @BeforeMethod
     public void setUp() throws Exception {
@@ -51,7 +52,8 @@ public class Spirit_Passenger_Info_Sanity {
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
         Thread.sleep(8000);
 
-        PassSearchElement = new Spirit_Passenger_Info_Elements(driver);
+        PassengerPage = new Spirit_Passenger_Info_Page(driver);
+
 
     }
 
@@ -68,7 +70,7 @@ public class Spirit_Passenger_Info_Sanity {
         Thread.sleep(2000);
         String expectedURL = "https://qa01.nk.spirit.com/book/passenger";
         String expectedTitle = "Retrieve Password | Spirit Airlines";
-        PassSearchElement.ResPas.click();
+        PassengerPage.ResetPasswordUrl();
         Thread.sleep(2000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -86,7 +88,7 @@ public class Spirit_Passenger_Info_Sanity {
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
         String expectedURL = "https://www.tsa.gov/travel/security-screening/identification";
-        PassSearchElement.LearMorePop.click();
+        PassengerPage.LearnMorePoUP();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         System.out.println(newUrl);
@@ -191,7 +193,7 @@ public class Spirit_Passenger_Info_Sanity {
 
         SoftAssert sa = new SoftAssert();
 
-        List<WebElement> Title = PassSearchElement.TitleDd;
+        List<WebElement> Title = PassengerPage.TitleDropDown();
         List<String> arr1 = new ArrayList<>();
         for (WebElement option : Title) {
             arr1.add(option.getText());
@@ -210,7 +212,7 @@ public class Spirit_Passenger_Info_Sanity {
 
         SoftAssert sa = new SoftAssert();
 
-        List<WebElement> Suffix = PassSearchElement.SuffixDd;
+        List<WebElement> Suffix = PassengerPage.SuffixDropDown();
         List<String> arr1 = new ArrayList<>();
         for (WebElement option : Suffix) {
             arr1.add(option.getText());
@@ -229,7 +231,7 @@ public class Spirit_Passenger_Info_Sanity {
 
         SoftAssert sa = new SoftAssert();
 
-        List<WebElement> State = PassSearchElement.StateDd;
+        List<WebElement> State = PassengerPage.StateDropDown();
         List<String> arr1 = new ArrayList<>();
         for (WebElement option : State) {
             arr1.add(option.getText());
@@ -247,7 +249,7 @@ public class Spirit_Passenger_Info_Sanity {
 
         SoftAssert sa = new SoftAssert();
 
-        List<WebElement> Country = PassSearchElement.CountryDd;
+        List<WebElement> Country = PassengerPage.CountryDropDown();
         List<String> arr1 = new ArrayList<>();
         for (WebElement option : Country) {
             arr1.add(option.getText());
@@ -266,7 +268,7 @@ public class Spirit_Passenger_Info_Sanity {
 
         SoftAssert sa = new SoftAssert();
 
-        List<WebElement> PhoneNumber = PassSearchElement.PhoneNumberDd;
+        List<WebElement> PhoneNumber = PassengerPage.PhoneNumberDropDown();
         List<String> arr1 = new ArrayList<>();
         for (WebElement option : PhoneNumber) {
             arr1.add(option.getText());
