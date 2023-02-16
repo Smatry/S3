@@ -1,5 +1,6 @@
 package tests;
 
+import elements.Spirit_Passenger_Info_Elements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ import org.testng.asserts.SoftAssert;
 public class Spirit_Passenger_Info_Sanity {
 
     WebDriver driver;
+    Spirit_Passenger_Info_Elements PassSearchElement;
 
     @BeforeMethod
     public void setUp() throws Exception {
@@ -43,6 +45,7 @@ public class Spirit_Passenger_Info_Sanity {
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
         Thread.sleep(8000);
 
+        PassSearchElement = new Spirit_Passenger_Info_Elements(driver);
 
     }
 
@@ -59,7 +62,7 @@ public class Spirit_Passenger_Info_Sanity {
         Thread.sleep(2000);
         String expectedURL = "https://qa01.nk.spirit.com/book/passenger";
         String expectedTitle = "Retrieve Password | Spirit Airlines";
-        driver.findElement(By.xpath("//button[@class='d-block ml-auto btn btn-link btn-sm pt-0 ng-star-inserted']")).click();
+        PassSearchElement.ResPas.click();
         Thread.sleep(2000);
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
@@ -77,7 +80,7 @@ public class Spirit_Passenger_Info_Sanity {
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
         String expectedURL = "https://www.tsa.gov/travel/security-screening/identification";
-        driver.findElement(By.xpath("//a[@href='javascript:void(0)']")).click();
+        PassSearchElement.LearMorePop.click();
         Thread.sleep(5000);
         String newUrl = driver.getCurrentUrl();
         System.out.println(newUrl);
