@@ -1,7 +1,5 @@
 package tests;
 
-import elements.Spirit_Passenger_Info_Elements;
-import graphql.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
