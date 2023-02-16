@@ -70,46 +70,79 @@ public class Spirit_Passenger_Info_Sanity {
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
-     @Test
-     public void Learn_More_PoUp () throws Exception  {
 
-         SoftAssert sa = new SoftAssert();
-         Thread.sleep(2000);
-         String expectedURL = "https://www.tsa.gov/travel/security-screening/identification";
-         driver.findElement(By.xpath("//a[@href='javascript:void(0)']")).click();
-         Thread.sleep(5000);
-         String newUrl = driver.getCurrentUrl();
-         System.out.println(newUrl);
+    @Test
+    public void Learn_More_PoUp() throws Exception {
 
-         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        String expectedURL = "https://www.tsa.gov/travel/security-screening/identification";
+        driver.findElement(By.xpath("//a[@href='javascript:void(0)']")).click();
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        System.out.println(newUrl);
 
-     }
-     @Test
-     public void Acceptable_Form_ofID_Url () throws  Exception {
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
-         SoftAssert sa = new SoftAssert();
-         Thread.sleep(2000);
-         String expectedURL = "https://www.tsa.gov/travel/security-screening/identification";
-         String expectedTitle = "Identification | Transportation Security Administration";
-         driver.navigate().to("https://www.tsa.gov/travel/security-screening/identification");
-         Thread.sleep(5000);
-         String newUrl = driver.getCurrentUrl();
-         String newTitle = driver.getTitle();
-         System.out.println(newUrl);
-         System.out.println(newTitle);
+    }
 
-         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
-         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+    @Test
+    public void Acceptable_Form_ofID_Url() throws Exception {
 
-     }
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        String expectedURL = "https://www.tsa.gov/travel/security-screening/identification";
+        String expectedTitle = "Identification | Transportation Security Administration";
+        driver.navigate().to("https://www.tsa.gov/travel/security-screening/identification");
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void DHS_REL_ID_Url() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        String expectedURL = "https://www.dhs.gov/real-id";
+        String expectedTitle = "Identification | Transportation Security Administration";
+        driver.navigate().to("https://www.dhs.gov/real-id");
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void tsa_gov_link () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        String expectedURL = "https://www.dhs.gov/real-id";
+        String expectedTitle = "Transportation Security Administration | Transportation Security Administration";
+        driver.navigate().to("https://www.tsa.gov/");
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
 
-
-
-
+    }
 
 
 }
-
-
-

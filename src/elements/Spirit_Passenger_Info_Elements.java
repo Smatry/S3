@@ -25,4 +25,5 @@ public class Spirit_Passenger_Info_Elements {
         PageFactory.initElements(driver, this);
 
     }
+
 }
