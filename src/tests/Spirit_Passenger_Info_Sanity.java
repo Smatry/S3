@@ -128,7 +128,7 @@ public class Spirit_Passenger_Info_Sanity {
     }
 
     @Test
-    public void tsa_gov_link () throws Exception {
+    public void tsa_gov_link() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
@@ -144,6 +144,23 @@ public class Spirit_Passenger_Info_Sanity {
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
+
+    }
+
+    @Test
+    public void Terms_and_Conditions() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        ((JavascriptExecutor) driver).executeScript("scroll(0,1000)");
+        Thread.sleep(3000);
+        String expectedURL = "https://cms10dss.spirit.com/Shared/en-us/Documents/General_Terms_and_Conditions.pdf";
+        driver.navigate().to("https://cms10dss.spirit.com/Shared/en-us/Documents/General_Terms_and_Conditions.pdf");
+        Thread.sleep(5000);
+        String newUrl = driver.getCurrentUrl();
+        System.out.println(newUrl);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
     }
 
