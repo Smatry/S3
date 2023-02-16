@@ -1,14 +1,20 @@
 package tests;
 
 import elements.Spirit_Passenger_Info_Elements;
+import graphql.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Spirit_Passenger_Info_Sanity {
 
@@ -144,7 +150,6 @@ public class Spirit_Passenger_Info_Sanity {
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
-
     }
 
     @Test
@@ -163,8 +168,9 @@ public class Spirit_Passenger_Info_Sanity {
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
     }
+
     @Test
-    public void Privacy_Policy () throws Exception {
+    public void Privacy_Policy() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
@@ -177,6 +183,100 @@ public class Spirit_Passenger_Info_Sanity {
         System.out.println(newUrl);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+
+    }
+
+    @Test
+    public void Title_DD() {
+
+        SoftAssert sa = new SoftAssert();
+
+        List<WebElement> Title = PassSearchElement.TitleDd;
+        List<String> arr1 = new ArrayList<>();
+        for (WebElement option : Title) {
+            arr1.add(option.getText());
+        }
+        List<String> arr2 = new ArrayList<String>(arr1);
+        Collections.sort(arr2);
+        System.out.println("Actual List:" + arr1);
+        System.out.println("Sorted List:" + arr2);
+
+        sa.assertTrue(arr1.equals(arr2));
+
+    }
+
+    @Test
+    public void Suffix_DD() {
+
+        SoftAssert sa = new SoftAssert();
+
+        List<WebElement> Suffix = PassSearchElement.SuffixDd;
+        List<String> arr1 = new ArrayList<>();
+        for (WebElement option : Suffix) {
+            arr1.add(option.getText());
+        }
+        List<String> arr2 = new ArrayList<String>(arr1);
+        Collections.sort(arr2);
+        System.out.println("Actual List:" + arr1);
+        System.out.println("Sorted List:" + arr2);
+
+        sa.assertTrue(arr1.equals(arr2));
+
+    }
+
+    @Test
+    public void State_DD() {
+
+        SoftAssert sa = new SoftAssert();
+
+        List<WebElement> State = PassSearchElement.StateDd;
+        List<String> arr1 = new ArrayList<>();
+        for (WebElement option : State) {
+            arr1.add(option.getText());
+        }
+        List<String> arr2 = new ArrayList<String>(arr1);
+        Collections.sort(arr2);
+        System.out.println("Actual List:" + arr1);
+        System.out.println("Sorted List:" + arr2);
+
+        sa.assertTrue(arr1.equals(arr2));
+
+    }
+    @Test
+    public void Country_DD() {
+
+        SoftAssert sa = new SoftAssert();
+
+        List<WebElement> Country = PassSearchElement.CountryDd;
+        List<String> arr1 = new ArrayList<>();
+        for (WebElement option : Country) {
+            arr1.add(option.getText());
+        }
+        List<String> arr2 = new ArrayList<String>(arr1);
+        Collections.sort(arr2);
+        System.out.println("Actual List:" + arr1);
+        System.out.println("Sorted List:" + arr2);
+
+        sa.assertTrue(arr1.equals(arr2));
+
+    }
+
+    @Test
+    public void Phone_Number_Country_Code_DD () {
+
+        SoftAssert sa = new SoftAssert();
+
+        List<WebElement> PhoneNumber = PassSearchElement.PhoneNumberDd;
+        List<String> arr1 = new ArrayList<>();
+        for (WebElement option : PhoneNumber) {
+            arr1.add(option.getText());
+        }
+        List<String> arr2 = new ArrayList<String>(arr1);
+        Collections.sort(arr2);
+        System.out.println("Actual List:" + arr1);
+        System.out.println("Sorted List:" + arr2);
+
+        sa.assertTrue(arr1.equals(arr2));
 
     }
 
