@@ -242,43 +242,30 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
 
         driver.findElement(By.id("title0")).sendKeys("Mr");
         Thread.sleep(2000);
-
         driver.findElement(By.id("firstName0")).sendKeys("Bob");
         Thread.sleep(2000);
-
         driver.findElement(By.id("middleName0")).sendKeys("lucky");
         Thread.sleep(2000);
-
         driver.findElement(By.id("lastName0")).sendKeys("McLaud");
         Thread.sleep(2000);
-
         driver.findElement(By.id("dateOfBirth0")).sendKeys(("07/07/2007"));
         Thread.sleep(2000);
-
         ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
         Thread.sleep(2000);
-
         driver.findElement(By.id("firstName")).sendKeys("Bob");
         Thread.sleep(2000);
-
         driver.findElement(By.id("lastName")).sendKeys("McLaud");
         Thread.sleep(2000);
-
         driver.findElement(By.id("provinceState")).sendKeys("Florida");
         Thread.sleep(2000);
-
         driver.findElement(By.id("contactEmailPrimary")).sendKeys("BobMcLaud@spirit.com");
         Thread.sleep(2000);
-
         driver.findElement(By.id("contactEmailConfirm")).sendKeys("BobMcLaud@spirit.com");
         Thread.sleep(2000);
-
         driver.findElement(By.id("phoneNumber")).sendKeys("00000000007");
         Thread.sleep(3000);
-
         driver.findElement(By.xpath("//button[@data-qa='passenger-page-continue']")).click();
         Thread.sleep(5000);
-
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
         System.out.println(newUrl);
