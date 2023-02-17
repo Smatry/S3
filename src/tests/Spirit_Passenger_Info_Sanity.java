@@ -240,7 +240,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         String expectedURL = "https://qa01.nk.spirit.com/book/bundles";
         String expectedTitle = "Upgrade & Save | Spirit Airlines";
 
-        driver.findElement(By.id("title0")).sendKeys("Mr");
+        PassengerPage.Title("Mr");
         Thread.sleep(2000);
         driver.findElement(By.id("firstName0")).sendKeys("Bob");
         Thread.sleep(2000);
@@ -267,6 +267,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-qa='passenger-page-continue']")).click();
         Thread.sleep(5000);
+
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
         System.out.println(newUrl);

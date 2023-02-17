@@ -48,5 +48,15 @@ public class Spirit_Passenger_Info_Page {
 
     }
 
+    public void Title (String title) {
+        PassSearchElement.title.click();
+
+    }
+
+    public void FirstName (String Name) {
+        PassSearchElement.firstName.click();
+
+    }
+
 
 }
