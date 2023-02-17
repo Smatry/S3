@@ -2,15 +2,9 @@ package tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.Spirit_Passenger_Info_Page;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -237,4 +231,84 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
 
     }
 
+    @Test
+    public void Adding_Info_LandsOn_Bundles () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+
+        String expectedURL = "https://qa01.nk.spirit.com/book/bundles";
+        String expectedTitle = "Upgrade & Save | Spirit Airlines";
+
+        driver.findElement(By.id("title0")).sendKeys("Mr");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("firstName0")).sendKeys("Bob");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("middleName0")).sendKeys("lucky");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("lastName0")).sendKeys("McLaud");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("dateOfBirth0")).sendKeys(("07/07/2007"));
+        Thread.sleep(2000);
+
+        ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("firstName")).sendKeys("Bob");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("lastName")).sendKeys("McLaud");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("provinceState")).sendKeys("Florida");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("contactEmailPrimary")).sendKeys("BobMcLaud@spirit.com");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("contactEmailConfirm")).sendKeys("BobMcLaud@spirit.com");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("phoneNumber")).sendKeys("00000000007");
+        Thread.sleep(3000);
+
+        driver.findElement(By.xpath("//button[@data-qa='passenger-page-continue']")).click();
+        Thread.sleep(5000);
+
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
