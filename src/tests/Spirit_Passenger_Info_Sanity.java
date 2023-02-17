@@ -239,7 +239,6 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
 
         String expectedURL = "https://qa01.nk.spirit.com/book/bundles";
         String expectedTitle = "Upgrade & Save | Spirit Airlines";
-
         PassengerPage.Title("Mr");
         Thread.sleep(2000);
         PassengerPage.FirstName("Bob");
@@ -254,9 +253,9 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
 
         Thread.sleep(2000);
-        driver.findElement(By.id("firstName")).sendKeys("Bob");
+        PassengerPage.ConFirstName("Bob");
         Thread.sleep(2000);
-        driver.findElement(By.id("lastName")).sendKeys("McLaud");
+        PassengerPage.ConLastName("McLaud");
         Thread.sleep(2000);
         driver.findElement(By.id("provinceState")).sendKeys("Florida");
         Thread.sleep(2000);

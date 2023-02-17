@@ -71,4 +71,12 @@ public class Spirit_Passenger_Info_Page {
         PassSearchElement.DoB.sendKeys(DoB);
     }
 
+    public void ConFirstName (String Name) {
+        PassSearchElement.conFirstName.sendKeys(Name);
+    }
+
+    public void ConLastName (String lastName) {
+        PassSearchElement.conLastName.sendKeys(lastName);
+    }
+
 }
