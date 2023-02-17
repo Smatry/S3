@@ -48,6 +48,21 @@ public class Spirit_Passenger_Info_Elements {
     //Phone_Number_Country_Code_DD
     @FindBy(id = "phoneCountryType") public List<WebElement> PhoneNumberDd;
 
+    //Adding_Info_LandsOn_Bundles
+    @FindBy(id = "title0") public WebElement title;
+    @FindBy(id = "firstName0") public WebElement firstName;
+    @FindBy(id = "middleName0") public WebElement midName;
+    @FindBy(id = "lastName0") public WebElement lasName;
+    @FindBy(id = "dateOfBirth0") public WebElement DoB;
+    @FindBy(id = "firstName") public WebElement conFirstName;
+    @FindBy(id = "lastName") public WebElement conLastName;
+    @FindBy(id = "provinceState") public WebElement State;
+    @FindBy(id = "contactEmailPrimary") public WebElement email;
+    @FindBy(id = "contactEmailConfirm") public WebElement confEmail;
+    @FindBy(id = "phoneNumber") public WebElement phoneNumber;
+    @FindBy(xpath = "//button[@data-qa='passenger-page-continue']") public WebElement confirm;
+
+
 
 
     public Spirit_Passenger_Info_Elements(WebDriver driver) {

@@ -251,6 +251,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         driver.findElement(By.id("dateOfBirth0")).sendKeys(("07/07/2007"));
         Thread.sleep(2000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
+
         Thread.sleep(2000);
         driver.findElement(By.id("firstName")).sendKeys("Bob");
         Thread.sleep(2000);
