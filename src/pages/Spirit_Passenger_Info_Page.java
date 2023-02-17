@@ -49,14 +49,26 @@ public class Spirit_Passenger_Info_Page {
     }
 
     public void Title (String title) {
-        PassSearchElement.title.click();
+        PassSearchElement.title.sendKeys(title);
 
     }
 
     public void FirstName (String Name) {
-        PassSearchElement.firstName.click();
+        PassSearchElement.firstName.sendKeys(Name);
 
     }
 
+    public void MiddleName (String midName) {
+        PassSearchElement.midName.sendKeys(midName);
+    }
+
+    public void LastName (String lastName) {
+        PassSearchElement.lastName.sendKeys(lastName);
+
+    }
+
+    public void DOB (String DoB) {
+        PassSearchElement.DoB.sendKeys(DoB);
+    }
 
 }

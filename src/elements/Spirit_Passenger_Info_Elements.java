@@ -52,7 +52,7 @@ public class Spirit_Passenger_Info_Elements {
     @FindBy(id = "title0") public WebElement title;
     @FindBy(id = "firstName0") public WebElement firstName;
     @FindBy(id = "middleName0") public WebElement midName;
-    @FindBy(id = "lastName0") public WebElement lasName;
+    @FindBy(id = "lastName0") public WebElement lastName;
     @FindBy(id = "dateOfBirth0") public WebElement DoB;
     @FindBy(id = "firstName") public WebElement conFirstName;
     @FindBy(id = "lastName") public WebElement conLastName;

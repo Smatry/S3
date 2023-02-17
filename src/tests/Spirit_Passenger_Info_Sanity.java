@@ -242,14 +242,15 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
 
         PassengerPage.Title("Mr");
         Thread.sleep(2000);
-        driver.findElement(By.id("firstName0")).sendKeys("Bob");
+        PassengerPage.FirstName("Bob");
         Thread.sleep(2000);
-        driver.findElement(By.id("middleName0")).sendKeys("lucky");
+        PassengerPage.MiddleName("lucky");
         Thread.sleep(2000);
-        driver.findElement(By.id("lastName0")).sendKeys("McLaud");
+        PassengerPage.LastName("McLaud");
         Thread.sleep(2000);
-        driver.findElement(By.id("dateOfBirth0")).sendKeys(("07/07/2007"));
+        PassengerPage.DOB(("07/07/2007"));
         Thread.sleep(2000);
+
         ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
 
         Thread.sleep(2000);
