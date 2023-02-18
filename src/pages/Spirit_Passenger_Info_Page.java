@@ -79,4 +79,28 @@ public class Spirit_Passenger_Info_Page {
         PassSearchElement.conLastName.sendKeys(lastName);
     }
 
+    public void State (String state) {
+        PassSearchElement.State.sendKeys(state);
+
+    }
+    public void Email (String email) {
+        PassSearchElement.email.sendKeys(email);
+
+    }
+
+    public void ConEmail (String email) {
+        PassSearchElement.confEmail.sendKeys(email);
+
+    }
+
+    public void PhoneNumber (String number) {
+        PassSearchElement.phoneNumber.sendKeys(number);
+
+    }
+
+    public void Continue () {
+        PassSearchElement.confirm.click();
+    }
+
+
 }
