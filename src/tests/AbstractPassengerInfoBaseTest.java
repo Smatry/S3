@@ -1,5 +1,6 @@
 package tests;
 
+import Libraries.AppLib;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,9 @@ import pages.Spirit_Passenger_Info_Page;
 public class AbstractPassengerInfoBaseTest {
 
     WebDriver driver;
-    Spirit_Passenger_Info_Page PassengerPage;
+
+    private AppLib app;
+
 
     @BeforeMethod
     public void setUp() throws Exception {
@@ -43,7 +46,7 @@ public class AbstractPassengerInfoBaseTest {
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
         Thread.sleep(8000);
 
-        PassengerPage = new Spirit_Passenger_Info_Page(driver);
+        app = new AppLib(driver);
 
 
     }
@@ -52,6 +55,10 @@ public class AbstractPassengerInfoBaseTest {
     public void tearDown() {
         driver.close();
 
+    }
+
+    public AppLib App() {
+        return app;
     }
 
 }

@@ -3,18 +3,23 @@ package Libraries;
 import org.openqa.selenium.WebDriver;
 
 public class FlowLib {
-    private WebDriver driver;
+     private WebDriver driver;
 
-    public FlowLib (WebDriver driver) {
+     public FlowLib (WebDriver driver) {
         this.driver = driver;
     }
+
+     public void navigateToUrl(String url) {
+         driver.get(url);
+     }
+
 
      public String getCurrentPageUrl()  {
         return this.driver.getCurrentUrl();
 
     }
 
-    public String getCurrentPageTitle() {
+     public String getCurrentPageTitle() {
         return this.driver.getTitle();
 
     }
