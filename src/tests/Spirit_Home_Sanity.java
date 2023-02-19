@@ -551,5 +551,39 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
+    @Test
+    public void Contract_Of_Carriage_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://cms10dss.spirit.com/Shared/en-us/Documents/Contract_of_Carriage.pdf";
+        App().Flow().navigateToUrl("https://cms10dss.spirit.com/Shared/en-us/Documents/Contract_of_Carriage.pdf");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        System.out.println(newUrl);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+
+    }
+    @Test
+    public void Your_Privacy_Choice_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://privacyportal.onetrust.com/webform/a3ba0bce-b005-4f16-b003-c296ec63f389/954bc30a-2d63-4519-8090-bee1d30277d6";
+        String expectedTitle = "Privacy Web Form";
+        App().Flow().navigateToUrl("https://privacyportal.onetrust.com/webform/a3ba0bce-b005-4f16-b003-c296ec63f389/954bc30a-2d63-4519-8090-bee1d30277d6");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+
 
 }
