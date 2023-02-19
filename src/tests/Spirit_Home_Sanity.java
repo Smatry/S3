@@ -332,7 +332,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
     @Test
-    public void About_Us_Url () throws Exception {
+    public void About_Us_Footer_Url () throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -350,7 +350,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
     @Test
-    public void Charity_Foundation_Url () throws Exception {
+    public void Charity_Foundation_Footer_Url () throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
