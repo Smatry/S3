@@ -59,7 +59,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
     @Test
-    public void Free_Spirit_Url() throws Exception {
+    public void Free_Spirit_Header_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         String expectedURL = "https://qa01.nk.spirit.com/free-spirit";
@@ -336,10 +336,8 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        ((JavascriptExecutor) driver).executeScript("scroll(0,2000)");
-        Thread.sleep(2000);
         String expectedURL = "https://qa01.nk.spirit.com/about-us";
-        String expectedTitle = "Optional Services | Spirit Airlines";
+        String expectedTitle = "About Spirit | Spirit Airlines";
         App().Flow().navigateToUrl("https://qa01.nk.spirit.com/about-us");
         Thread.sleep(2000);
         String newUrl = App().Flow().getCurrentPageUrl();
@@ -351,5 +349,207 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
+    @Test
+    public void Charity_Foundation_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://foundation.spirit.com/en-us/foundation";
+        String expectedTitle = "Spirit Foundation - Home · Spirit Airlines Support";
+        App().Flow().navigateToUrl("https://foundation.spirit.com/en-us/foundation");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Free_Spirit_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://qa01.nk.spirit.com/free-spirit";
+        String expectedTitle = "Spirit Foundation - Home · Spirit Airlines Support";
+        App().Flow().navigateToUrl("https://qa01.nk.spirit.com/free-spirit");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Spirit_Saver_Club_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://qa01.nk.spirit.com/savers-club";
+        String expectedTitle = "Spirit Airlines";
+        App().Flow().navigateToUrl("https://qa01.nk.spirit.com/savers-club");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Media_Centre_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://qa01.nk.spirit.com/press-release";
+        String expectedTitle = "Media Center | Spirit Airlines";
+        App().Flow().navigateToUrl("https://qa01.nk.spirit.com/press-release");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+    @Test
+    public void Investor_Relations_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "http://ir.spirit.com/";
+        String expectedTitle = "Investor Relations - Spirit Airlines, Inc";
+        App().Flow().navigateToUrl("http://ir.spirit.com/");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Careers_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://careers.spirit.com/careers-home";
+        String expectedTitle = "Careers Home Apply";
+        App().Flow().navigateToUrl("https://careers.spirit.com/careers-home");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void ESG_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://ir.spirit.com/ESG-brief/default.aspx";
+        String expectedTitle = "Careers Home Apply";
+        App().Flow().navigateToUrl("https://ir.spirit.com/ESG-brief/default.aspx");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+    @Test
+    public void Help_Centre_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://customersupport.spirit.com/en-US/";
+        String expectedTitle = "Spirit Airlines Support · Spirit Airlines Support";
+        App().Flow().navigateToUrl("https://customersupport.spirit.com/en-US/");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Contact_Us_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://qa01.nk.spirit.com/s/contact-us";
+        String expectedTitle = "Spirit Airlines";
+        App().Flow().navigateToUrl("https://qa01.nk.spirit.com/s/contact-us");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+    @Test
+    public void Legal_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://qa01.nk.spirit.com/legal";
+        String expectedTitle = "Legal | Spirit Airlines";
+        App().Flow().navigateToUrl("https://qa01.nk.spirit.com/legal");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Privacy_Policy_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://cms10dss.spirit.com/Shared/en-us/Documents/Privacy_Policy.pdf";
+        App().Flow().navigateToUrl("https://cms10dss.spirit.com/Shared/en-us/Documents/Privacy_Policy.pdf");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        System.out.println(newUrl);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+
+    }
+
 
 }
