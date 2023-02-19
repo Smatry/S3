@@ -55,11 +55,11 @@ public class Spirit_Home_Page_Elements {
 
      @FindBy(xpath = "//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']") public WebElement search;
 
-     @FindBy(xpath = "//section//div//button[@data-qa='pricing-breakdown-standard-cta']") public WebElement standardPricing;
+     @FindBy(xpath = "//app-availability-fare-picker//div//app-availability-journey//div[@class='p-grid__standard-price']") public WebElement standardPricing;
 
 
      // Booking_Flight_Confirm
-     @FindBy(xpath = "//div//p[@class='p-grid__pricing-value ng-star-inserted']") public WebElement Confirm;
+     @FindBy(xpath = "//section//div//button[@data-qa='pricing-breakdown-standard-cta']") public WebElement Confirm;
 
      //Create_An_Acc
      @FindBy(xpath = "//a[@data-qa='home-page.common-header-login']") public WebElement singInHeader;

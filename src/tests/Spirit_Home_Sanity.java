@@ -257,10 +257,8 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(2000);
         App().Pages().SpiritHomePage().Password("Brandy12$");
         Thread.sleep(4000);
-
         driver.findElement(By.xpath("//div//input[@class='checkBox ng-untouched ng-dirty ng-invalid']")).click();
         Thread.sleep(4000);
-
         App().Pages().SpiritHomePage().SingUp();
         Thread.sleep(2000);
 
@@ -282,10 +280,9 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         App().Pages().SpiritHomePage().SearchButton();
         Thread.sleep(5000);
         App().Pages().SpiritHomePage().FlightConfirmed();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         String expectedURL = "https://qa01.nk.spirit.com/book/passenger";
-        Thread.sleep(5000);
-
+        Thread.sleep(3000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,600)");
         Thread.sleep(2000);
         App().Pages().SpiritHomePage().WithStandardPricing();
@@ -294,6 +291,64 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         System.out.println(newUrl);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+
+    }
+
+    @Test
+    public void COVID_19_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        String expectedURL = "https://qa01.nk.spirit.com/notices";
+        String expectedTitle = "Important Travel Notices | Spirit Airlines";
+        App().Flow().navigateToUrl("https://qa01.nk.spirit.com/notices");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void OptionalService_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        String expectedURL = "https://qa01.nk.spirit.com/optional-services";
+        String expectedTitle = "Optional Services | Spirit Airlines";
+        App().Flow().navigateToUrl("https://qa01.nk.spirit.com/optional-services");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+    @Test
+    public void About_Us_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        ((JavascriptExecutor) driver).executeScript("scroll(0,2000)");
+        Thread.sleep(2000);
+        String expectedURL = "https://qa01.nk.spirit.com/about-us";
+        String expectedTitle = "Optional Services | Spirit Airlines";
+        App().Flow().navigateToUrl("https://qa01.nk.spirit.com/about-us");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
 
