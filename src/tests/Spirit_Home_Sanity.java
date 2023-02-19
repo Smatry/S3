@@ -584,6 +584,176 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
+    @Test
+    public void Travel_Agent_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://nkprodr4xspa.spirit.com/login";
+        String expectedTitle = "Travel Agent Portal | Spirit Airlines";
+        App().Flow().navigateToUrl("https://nkprodr4xspa.spirit.com/login");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+    @Test
+    public void Group_Agent_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://customersupport.spirit.com/en-us/category/article/KA-01333";
+        String expectedTitle = "Spirit Airlines Map";
+        App().Flow().navigateToUrl("https://customersupport.spirit.com/en-us/category/article/KA-01333");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Where_We_Fly_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://www.spirit.com/en/route-map";
+        String expectedTitle = "Group Travel · Spirit Support";
+        App().Flow().navigateToUrl("https://www.spirit.com/en/route-map");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Deals_Fly_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://www.spirit.com/en/flights";
+        String expectedTitle = "Spirit Airlines Flights and Destinations";
+        App().Flow().navigateToUrl("https://www.spirit.com/en/flights");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Facebook_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://www.facebook.com/SpiritAirlines/";
+        String expectedTitle = "Spirit Airlines - Home | Facebook";
+        App().Flow().navigateToUrl("https://www.facebook.com/SpiritAirlines/");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Twitter_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://twitter.com/spiritairlines";
+        String expectedTitle = "Spirit Airlines (@SpiritAirlines) / Twitter";
+        App().Flow().navigateToUrl("https://twitter.com/spiritairlines");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Instagram_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://www.instagram.com/spiritairlines/";
+        String expectedTitle = "Spirit Airlines (@spiritairlines) • Instagram photos and videos";
+        App().Flow().navigateToUrl("https://www.instagram.com/spiritairlines/");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+    @Test
+    public void YouTube_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://www.youtube.com/channel/UCrOwgmAwcw8r8xs34RiIuJg";
+        String expectedTitle = "Spirit Airlines - YouTube";
+        App().Flow().navigateToUrl("https://www.youtube.com/channel/UCrOwgmAwcw8r8xs34RiIuJg");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Tumblr_Footer_Url () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        String expectedURL = "https://www.tumblr.com/login_required/spiritairlines";
+        String expectedTitle = "Tumblr";
+        App().Flow().navigateToUrl("https://www.tumblr.com/login_required/spiritairlines");
+        Thread.sleep(2000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+
 
 
 }
