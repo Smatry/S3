@@ -1,0 +1,15 @@
+<suite name="Include Drop Down Menus from the Passenger Page">
+    <test name="DropDown Tests" >
+        <classes>
+            <class name="tests.Spirit_Passenger_Info_Sanity">
+                <methods>
+                    <include name="Title_DD"> </include>
+                    <include name="Suffix_DD"> </include>
+                    <include name="State_DD"> </include>
+                    <include name="Country_DD" > </include>
+                    <include name="Phone_Number_Country_Code_DD"> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
