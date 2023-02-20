@@ -1,8 +1,0 @@
-<suite name="Sanity Test Suite">
-    <test name="Release 2023.1 Sanity Testing">
-        <classes>
-            <class name="tests.Spirit_Home_Sanity"/>
-            <class name="tests.Spirit_My_Trips_Sanity"/>
-        </classes>
-    </test>
-</suite>

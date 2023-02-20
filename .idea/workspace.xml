@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1318b327-9d80-4432-9184-5bbbdef3baeb" name="Changes" comment="test" />
+    <list default="true" id="ef088cdb-0bf7-48fe-ba8b-6e78f2117500" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Full_Regression_Suite .xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spirit-test 3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,29 +24,23 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2LHTQLKvDMR1aM7nQpKIKkTJQLY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2M0vp0ZmdiB1mvOjtzjaWlCasAw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/96910/Downloads/testng-7.4.0.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Spirit_Home_Sanity.Tumblr_Footer_Url">
-    <configuration name="Spirit_Home_Sanity.Facebook_Footer_Url" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Spirit_Passenger_Info_Sanity.Reset_Password_Url">
+    <configuration name="Spirit_Home_Sanity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -55,7 +50,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
-      <option name="METHOD_NAME" value="Facebook_Footer_Url" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spirit_Home_Sanity.My_Trips_Url" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="spirit-test 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="My_Trips_Url" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -63,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_Home_Sanity.Instagram_Footer_Url" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_My_Trips_Sanity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -72,8 +84,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
-      <option name="METHOD_NAME" value="Instagram_Footer_Url" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_My_Trips_Sanity" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spirit_My_Trips_Sanity.my_Trip_Page_Url" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="spirit-test 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_My_Trips_Sanity" />
+      <option name="METHOD_NAME" value="my_Trip_Page_Url" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -81,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_Home_Sanity.Tumblr_Footer_Url" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Passenger_Info_Sanity.Reset_Password_Url" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -90,44 +119,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
-      <option name="METHOD_NAME" value="Tumblr_Footer_Url" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Spirit_Home_Sanity.Twitter_Footer_Url" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="spirit-test 3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
-      <option name="METHOD_NAME" value="Twitter_Footer_Url" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Spirit_Home_Sanity.YouTube_Footer_Url" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="spirit-test 3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
-      <option name="METHOD_NAME" value="YouTube_Footer_Url" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Passenger_Info_Sanity" />
+      <option name="METHOD_NAME" value="Reset_Password_Url" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,376 +130,23 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Spirit_Home_Sanity.Tumblr_Footer_Url" />
-        <item itemvalue="TestNG.Spirit_Home_Sanity.YouTube_Footer_Url" />
-        <item itemvalue="TestNG.Spirit_Home_Sanity.Instagram_Footer_Url" />
-        <item itemvalue="TestNG.Spirit_Home_Sanity.Twitter_Footer_Url" />
-        <item itemvalue="TestNG.Spirit_Home_Sanity.Facebook_Footer_Url" />
+        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.Reset_Password_Url" />
+        <item itemvalue="TestNG.Spirit_My_Trips_Sanity.my_Trip_Page_Url" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.My_Trips_Url" />
+        <item itemvalue="TestNG.Spirit_My_Trips_Sanity" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1318b327-9d80-4432-9184-5bbbdef3baeb" name="Changes" comment="" />
-      <created>1675526990859</created>
+      <changelist id="ef088cdb-0bf7-48fe-ba8b-6e78f2117500" name="Changes" comment="" />
+      <created>1676917492433</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1675526990859</updated>
+      <updated>1676917492433</updated>
     </task>
-    <task id="LOCAL-00019" summary="test">
-      <created>1676299844888</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1676299844888</updated>
-    </task>
-    <task id="LOCAL-00020" summary="test">
-      <created>1676323697600</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1676323697600</updated>
-    </task>
-    <task id="LOCAL-00021" summary="test">
-      <created>1676323815767</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1676323815767</updated>
-    </task>
-    <task id="LOCAL-00022" summary="test">
-      <created>1676325279228</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1676325279228</updated>
-    </task>
-    <task id="LOCAL-00023" summary="test">
-      <created>1676326203601</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1676326203601</updated>
-    </task>
-    <task id="LOCAL-00024" summary="test">
-      <created>1676326457053</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1676326457053</updated>
-    </task>
-    <task id="LOCAL-00025" summary="test">
-      <created>1676329068339</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1676329068339</updated>
-    </task>
-    <task id="LOCAL-00026" summary="test">
-      <created>1676379365447</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1676379365447</updated>
-    </task>
-    <task id="LOCAL-00027" summary="test">
-      <created>1676386535992</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1676386535992</updated>
-    </task>
-    <task id="LOCAL-00028" summary="test">
-      <created>1676388704369</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1676388704369</updated>
-    </task>
-    <task id="LOCAL-00029" summary="test">
-      <created>1676388746744</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1676388746744</updated>
-    </task>
-    <task id="LOCAL-00030" summary="test">
-      <created>1676398934203</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1676398934213</updated>
-    </task>
-    <task id="LOCAL-00031" summary="test">
-      <created>1676404791456</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1676404791456</updated>
-    </task>
-    <task id="LOCAL-00032" summary="test">
-      <created>1676405811410</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1676405811410</updated>
-    </task>
-    <task id="LOCAL-00033" summary="test">
-      <created>1676410372510</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1676410372510</updated>
-    </task>
-    <task id="LOCAL-00034" summary="test">
-      <created>1676412375164</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1676412375164</updated>
-    </task>
-    <task id="LOCAL-00035" summary="test">
-      <created>1676413471402</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1676413471402</updated>
-    </task>
-    <task id="LOCAL-00036" summary="test">
-      <created>1676467083703</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1676467083703</updated>
-    </task>
-    <task id="LOCAL-00037" summary="test">
-      <created>1676467348494</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1676467348494</updated>
-    </task>
-    <task id="LOCAL-00038" summary="test">
-      <created>1676487270760</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1676487270760</updated>
-    </task>
-    <task id="LOCAL-00039" summary="test">
-      <created>1676487870028</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1676487870028</updated>
-    </task>
-    <task id="LOCAL-00040" summary="test">
-      <created>1676488620535</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1676488620535</updated>
-    </task>
-    <task id="LOCAL-00041" summary="test">
-      <created>1676494435293</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1676494435293</updated>
-    </task>
-    <task id="LOCAL-00042" summary="test">
-      <created>1676494814382</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1676494814382</updated>
-    </task>
-    <task id="LOCAL-00043" summary="test">
-      <created>1676496179879</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1676496179879</updated>
-    </task>
-    <task id="LOCAL-00044" summary="test">
-      <created>1676497840577</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1676497840577</updated>
-    </task>
-    <task id="LOCAL-00045" summary="test">
-      <created>1676498893302</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1676498893302</updated>
-    </task>
-    <task id="LOCAL-00046" summary="test">
-      <created>1676500291627</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1676500291627</updated>
-    </task>
-    <task id="LOCAL-00047" summary="test">
-      <created>1676550216949</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1676550216949</updated>
-    </task>
-    <task id="LOCAL-00048" summary="test">
-      <created>1676551477296</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1676551477296</updated>
-    </task>
-    <task id="LOCAL-00049" summary="test">
-      <created>1676553179767</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1676553179767</updated>
-    </task>
-    <task id="LOCAL-00050" summary="test">
-      <created>1676553403250</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1676553403251</updated>
-    </task>
-    <task id="LOCAL-00051" summary="test">
-      <created>1676583154484</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1676583154484</updated>
-    </task>
-    <task id="LOCAL-00052" summary="test">
-      <created>1676584802773</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1676584802773</updated>
-    </task>
-    <task id="LOCAL-00053" summary="test">
-      <created>1676585152111</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1676585152112</updated>
-    </task>
-    <task id="LOCAL-00054" summary="test">
-      <created>1676585426177</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1676585426177</updated>
-    </task>
-    <task id="LOCAL-00055" summary="test">
-      <created>1676640923244</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1676640923245</updated>
-    </task>
-    <task id="LOCAL-00056" summary="test">
-      <created>1676647228410</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1676647228410</updated>
-    </task>
-    <task id="LOCAL-00057" summary="test">
-      <created>1676668074023</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1676668074023</updated>
-    </task>
-    <task id="LOCAL-00058" summary="test">
-      <created>1676670006430</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1676670006430</updated>
-    </task>
-    <task id="LOCAL-00059" summary="test">
-      <created>1676671160104</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1676671160109</updated>
-    </task>
-    <task id="LOCAL-00060" summary="test">
-      <created>1676673050723</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1676673050723</updated>
-    </task>
-    <task id="LOCAL-00061" summary="test">
-      <created>1676721724763</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1676721724763</updated>
-    </task>
-    <task id="LOCAL-00062" summary="test">
-      <created>1676727854114</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1676727854114</updated>
-    </task>
-    <task id="LOCAL-00063" summary="test">
-      <created>1676810662206</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1676810662206</updated>
-    </task>
-    <task id="LOCAL-00064" summary="test">
-      <created>1676813155312</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1676813155312</updated>
-    </task>
-    <task id="LOCAL-00065" summary="test">
-      <created>1676813558132</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1676813558132</updated>
-    </task>
-    <task id="LOCAL-00066" summary="test">
-      <created>1676814837707</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1676814837707</updated>
-    </task>
-    <task id="LOCAL-00067" summary="test">
-      <created>1676814953029</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1676814953029</updated>
-    </task>
-    <option name="localTasksCounter" value="68" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/spirit_test_3$Spirit_Home_Sanity_Create_An_Acc.ic" NAME="Spirit_Home_Sanity.Create_An_Acc Coverage Results" MODIFIED="1676412410137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>tests.*</FILTER>
-    </SUITE>
   </component>
 </project>
