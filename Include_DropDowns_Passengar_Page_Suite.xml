@@ -1,4 +1,4 @@
-<suite name="Include Drop Down Menus from the Passenger Page">
+<suite name="Include only Drop Down Menus from the Passenger Page">
     <test name="DropDown Tests" >
         <classes>
             <class name="tests.Spirit_Passenger_Info_Sanity">
