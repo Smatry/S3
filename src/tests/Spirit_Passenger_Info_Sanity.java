@@ -311,14 +311,22 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         App().Pages().SpiritPassengerInfoPage().Continue();
         Thread.sleep(4000);
 
+
         ((JavascriptExecutor)driver).executeScript("scroll(0,300)");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-qa='bundle-cta-button-BF']")).click();
-        Thread.sleep(3000);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,300)");
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("//button[@class='btn btn-link d-none d-md-inline-block']")).click();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
+
+
+        ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
+        Thread.sleep(4000);
+
+        //place to adding the bags
+
+        driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
+        Thread.sleep(4000);
+
+
         driver.findElement(By.xpath("//button[@data-qa='confirm-no-bags']")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-qa='seats-sticky-footer.next-button']")).click();
@@ -327,7 +335,8 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
         Thread.sleep(3000);
-
+        driver.findElement(By.xpath("//div//button[@data-qa='lastChanceUpsellModal.decline.cta']")).click();
+        Thread.sleep(3000);
 
 
         String newUrl = driver.getCurrentUrl();

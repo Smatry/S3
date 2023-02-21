@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef088cdb-0bf7-48fe-ba8b-6e78f2117500" name="Changes" comment="last push">
-      <change afterPath="$PROJECT_DIR$/Include_All_P1-Suite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Spirit_Passenger_Info_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Spirit_Passenger_Info_Elements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Passenger_Info_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Passenger_Info_Sanity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676928676957</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="last push">
+      <created>1676984844168</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676984844168</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
