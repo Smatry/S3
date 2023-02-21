@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -274,6 +275,71 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
+
+    @Test
+    public void OW_DOM_DOM_1Pax_Booking () throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+
+        String expectedURL = "https://qa01.nk.spirit.com/book/bundles";
+        String expectedTitle = "Upgrade & Save | Spirit Airlines";
+        App().Pages().SpiritPassengerInfoPage().Title("Mr");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().FirstName("Bob");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().MiddleName("lucky");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().LastName("McLaud");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().DOB(("07/07/2007"));
+        Thread.sleep(1000);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().ConFirstName("Bob");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().ConLastName("McLaud");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().State("Florida");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().Email("BobMcLaud@spirit.com");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().ConEmail("BobMcLaud@spirit.com");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().PhoneNumber("00000000007");
+        Thread.sleep(1000);
+        App().Pages().SpiritPassengerInfoPage().Continue();
+        Thread.sleep(4000);
+
+        ((JavascriptExecutor)driver).executeScript("scroll(0,300)");
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//button[@data-qa='bundle-cta-button-BF']")).click();
+        Thread.sleep(3000);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,300)");
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//button[@class='btn btn-link d-none d-md-inline-block']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//button[@data-qa='confirm-no-bags']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//button[@data-qa='seats-sticky-footer.next-button']")).click();
+        Thread.sleep(3000);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
+        Thread.sleep(3000);
+
+
+
+        String newUrl = driver.getCurrentUrl();
+        String newTitle = driver.getTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
 
 
 }

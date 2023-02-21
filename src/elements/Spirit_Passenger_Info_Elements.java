@@ -18,21 +18,6 @@ public class Spirit_Passenger_Info_Elements {
     // Learn_More_PoUp
     @FindBy(xpath = "//a[@href='javascript:void(0)']")  public WebElement LearMorePop;
 
-    //Acceptable_Form_ofID_Url
-    //@FindBy(linkText = "https://www.tsa.gov/travel/security-screening/identification")  public WebElement AcceptIDForm;
-
-    //DHS_REL_ID_Url
-    //@FindBy(linkText = "https://www.dhs.gov/real-id") public WebElement DhlRealIDUrl;
-
-    //tsa_gov_link
-    //@FindBy(linkText = "https://www.tsa.gov/") public WebElement TsaGovUrl;
-
-    //Terms_and_Conditions
-    //???
-
-    //Privacy_Policy
-    //???
-
     //Title_DD
     @FindBy(id = "title0") public List<WebElement> TitleDd;
 
@@ -62,6 +47,7 @@ public class Spirit_Passenger_Info_Elements {
     @FindBy(id = "phoneNumber") public WebElement phoneNumber;
     @FindBy(xpath = "//button[@data-qa='passenger-page-continue']") public WebElement confirm;
 
+    //End To End
 
 
 
