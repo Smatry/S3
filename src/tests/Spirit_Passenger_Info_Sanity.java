@@ -334,19 +334,21 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         //driver.findElement(By.xpath("//button[@data-qa='confirm-no-bags']")).click();
 
         //Seat Page
+        driver.findElement(By.xpath("//div[@data-qa='21D']")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-qa='seats-sticky-footer.next-button']")).click();
+
         //Option Page
         Thread.sleep(3000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
         Thread.sleep(4000);
-        driver.findElement(By.xpath("//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']")).click();
+        //driver.findElement(By.xpath("//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']")).click();
         Thread.sleep(3000);
 
         //Payment page
-        ((JavascriptExecutor)driver).executeScript("scroll(0,1300)");
+        ((JavascriptExecutor)driver).executeScript("scroll(0,1000)");
         Thread.sleep(3000);
         driver.findElement(By.id("accountHolderName")).sendKeys("Bob McLoud");
         Thread.sleep(3000);
@@ -356,7 +358,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.id("securityCode")).sendKeys("2222");
         Thread.sleep(3000);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,300)");
+        ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
         Thread.sleep(3000);
         driver.findElement(By.id("billingAddress")).sendKeys("Ocean Drive");
         Thread.sleep(3000);
@@ -366,11 +368,12 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.id("billingZipPostal")).sendKeys("33333");
         Thread.sleep(3000);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
+        Thread.sleep(3000);
         driver.findElement(By.id("termsCheck")).click();
         Thread.sleep(3000);
-
-
-
+        driver.findElement(By.xpath("//div[@class='col-12 d-flex justify-content-center last-margin']//button[@class='btn btn-primary']")).click();
+        Thread.sleep(3000);
 
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
