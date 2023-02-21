@@ -368,7 +368,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.id("billingZipPostal")).sendKeys("33333");
         Thread.sleep(3000);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
+        ((JavascriptExecutor)driver).executeScript("scroll(0,1000)");
         Thread.sleep(3000);
         driver.findElement(By.id("termsCheck")).click();
         Thread.sleep(3000);
