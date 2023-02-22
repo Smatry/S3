@@ -277,7 +277,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
     }
 
     @Test
-    public void OW_DOM_DOM_1Pax_Booking () throws Exception {
+    public void OW_Booking () throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
@@ -311,40 +311,36 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         App().Pages().SpiritPassengerInfoPage().Continue();
         Thread.sleep(4000);
 
-
+        //Bundle Page
         ((JavascriptExecutor)driver).executeScript("scroll(0,300)");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-qa='bundle-cta-button-BF']")).click();
         Thread.sleep(4000);
 
+
         //Bags Page
         ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
         Thread.sleep(4000);
-
-
         driver.findElement(By.xpath("//i[contains(@class,'add-circle')]")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//i[contains(@class,'add-circle')]")).click();
         Thread.sleep(2000);
-
         driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
         Thread.sleep(4000);
 
 
-        //driver.findElement(By.xpath("//button[@data-qa='confirm-no-bags']")).click();
-
         //Seat Page
-        driver.findElement(By.xpath("//div[@data-qa='21D']")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-qa='seats-sticky-footer.next-button']")).click();
+        Thread.sleep(3000);
 
         //Option Page
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
         Thread.sleep(4000);
-        //driver.findElement(By.xpath("//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']")).click();
+        driver.findElement(By.xpath("//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']")).click();
         Thread.sleep(3000);
 
         //Payment page
@@ -358,7 +354,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.id("securityCode")).sendKeys("2222");
         Thread.sleep(3000);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
+        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         Thread.sleep(3000);
         driver.findElement(By.id("billingAddress")).sendKeys("Ocean Drive");
         Thread.sleep(3000);
@@ -368,12 +364,12 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.id("billingZipPostal")).sendKeys("33333");
         Thread.sleep(3000);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,1000)");
+        driver.findElement(By.xpath("//label[@for='termsCheck']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.id("termsCheck")).click();
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("//div[@class='col-12 d-flex justify-content-center last-margin']//button[@class='btn btn-primary']")).click();
-        Thread.sleep(3000);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+        Thread.sleep(5000);
 
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
