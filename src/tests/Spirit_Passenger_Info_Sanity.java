@@ -337,14 +337,15 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         //Option Page
         Thread.sleep(5000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
-        Thread.sleep(4000);
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']")).click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
         //Payment page
-        ((JavascriptExecutor)driver).executeScript("scroll(0,1000)");
+        Thread.sleep(3000);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,3000)");
         Thread.sleep(3000);
         driver.findElement(By.id("accountHolderName")).sendKeys("Bob McLoud");
         Thread.sleep(3000);
@@ -354,7 +355,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.id("securityCode")).sendKeys("2222");
         Thread.sleep(3000);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
+        ((JavascriptExecutor)driver).executeScript("scroll(0,1500)");
         Thread.sleep(3000);
         driver.findElement(By.id("billingAddress")).sendKeys("Ocean Drive");
         Thread.sleep(3000);
@@ -366,10 +367,10 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         driver.findElement(By.xpath("//label[@for='termsCheck']")).click();
         Thread.sleep(3000);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
-        Thread.sleep(5000);
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
-        Thread.sleep(5000);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,2500)");
+        Thread.sleep(8000);
+        driver.findElement(By.xpath("//div//button[@name='paymentSubmit']")).click();
+        Thread.sleep(8000);
 
         String newUrl = driver.getCurrentUrl();
         String newTitle = driver.getTitle();
