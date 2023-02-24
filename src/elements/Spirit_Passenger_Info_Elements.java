@@ -54,6 +54,8 @@ public class Spirit_Passenger_Info_Elements {
     @FindBy(xpath = "//button[@data-qa='seats-sticky-footer.next-button']") public WebElement ContinueClick;
     @FindBy(xpath = "//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']") public WebElement ContinueOptionStandard;
     @FindBy(xpath = "//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']") public WebElement withoutFlightFlex;
+    @FindBy(id = "accountHolderName") public WebElement accHoldName;
+    @FindBy(id = "cardNumber") public WebElement CCnumber;
 
 
     public Spirit_Passenger_Info_Elements(WebDriver driver) {

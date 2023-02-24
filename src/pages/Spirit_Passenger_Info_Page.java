@@ -129,6 +129,18 @@ public class Spirit_Passenger_Info_Page {
    }
    public void ContinueWithoutFlightFlex() {
        PassSearchElement.withoutFlightFlex.click();
+
    }
+
+   public void AccountHolderName (String holdname) {
+       PassSearchElement.accHoldName.sendKeys(holdname);
+
+   }
+
+   public void CreditCardNumber (String creditNumber) {
+       PassSearchElement.CCnumber.sendKeys(creditNumber);
+
+   }
+
 
 }

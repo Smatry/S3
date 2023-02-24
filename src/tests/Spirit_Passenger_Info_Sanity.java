@@ -334,14 +334,13 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(5000);
         App().Pages().SpiritPassengerInfoPage().ContinueWithoutFlightFlex();
         Thread.sleep(5000);
-
         //Payment page
         Thread.sleep(3000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,3000)");
         Thread.sleep(3000);
-        driver.findElement(By.id("accountHolderName")).sendKeys("Bob McLoud");
+        App().Pages().SpiritPassengerInfoPage().AccountHolderName("Bob McLoud");
         Thread.sleep(3000);
-        driver.findElement((By.id("cardNumber"))).sendKeys("373235387881007");
+        App().Pages().SpiritPassengerInfoPage().CreditCardNumber("373235387881007");
         Thread.sleep(3000);
         driver.findElement(By.id("expMonthYear")).sendKeys("07/27");
         Thread.sleep(3000);
