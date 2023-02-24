@@ -58,6 +58,13 @@ public class Spirit_Passenger_Info_Elements {
     @FindBy(id = "cardNumber") public WebElement CCnumber;
     @FindBy(id = "expMonthYear") public WebElement CCexpiration;
     @FindBy(id = "securityCode") public WebElement CCsecurityCode;
+    @FindBy(id = "billingAddress") public WebElement billingAddress;
+    @FindBy(id = "billingCity") public WebElement billingCity;
+    @FindBy(id = "billingState") public WebElement billingState;
+
+
+
+
 
 
     public Spirit_Passenger_Info_Elements(WebDriver driver) {
