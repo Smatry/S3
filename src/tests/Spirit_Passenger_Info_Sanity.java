@@ -342,9 +342,9 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         App().Pages().SpiritPassengerInfoPage().CreditCardNumber("373235387881007");
         Thread.sleep(3000);
-        driver.findElement(By.id("expMonthYear")).sendKeys("07/27");
+        App().Pages().SpiritPassengerInfoPage().CreditCardExpirationDate ("07/27");
         Thread.sleep(3000);
-        driver.findElement(By.id("securityCode")).sendKeys("2222");
+        App().Pages().SpiritPassengerInfoPage().CreditCardSecurityCode("2222");
         Thread.sleep(3000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,1500)");
         Thread.sleep(3000);

@@ -56,6 +56,8 @@ public class Spirit_Passenger_Info_Elements {
     @FindBy(xpath = "//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']") public WebElement withoutFlightFlex;
     @FindBy(id = "accountHolderName") public WebElement accHoldName;
     @FindBy(id = "cardNumber") public WebElement CCnumber;
+    @FindBy(id = "expMonthYear") public WebElement CCexpiration;
+    @FindBy(id = "securityCode") public WebElement CCsecurityCode;
 
 
     public Spirit_Passenger_Info_Elements(WebDriver driver) {

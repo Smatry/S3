@@ -142,5 +142,13 @@ public class Spirit_Passenger_Info_Page {
 
    }
 
+   public void CreditCardExpirationDate (String exdate) {
+       PassSearchElement.CCexpiration.sendKeys(exdate);
+
+   }
+   public void CreditCardSecurityCode (String code)  {
+       PassSearchElement.CCsecurityCode.sendKeys(code);
+
+   }
 
 }
