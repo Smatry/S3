@@ -117,6 +117,18 @@ public class Spirit_Passenger_Info_Page {
 
 
    }
+   public void ContinueSelected () {
+       PassSearchElement.ContinueClick.click();
 
+
+   }
+
+   public void ContinueOptionStandard () {
+       PassSearchElement.ContinueOptionStandard.click();
+
+   }
+   public void ContinueWithoutFlightFlex() {
+       PassSearchElement.withoutFlightFlex.click();
+   }
 
 }

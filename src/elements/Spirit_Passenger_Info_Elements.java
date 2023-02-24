@@ -51,6 +51,9 @@ public class Spirit_Passenger_Info_Elements {
     @FindBy(xpath = "//button[@data-qa='bundle-cta-button-BF']") public WebElement bundleSelect;
     @FindBy(xpath = "/i[contains(@class,'add-circle')]") public WebElement addCarryOn;
     @FindBy(xpath = "//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']") public WebElement continueStandard;
+    @FindBy(xpath = "//button[@data-qa='seats-sticky-footer.next-button']") public WebElement ContinueClick;
+    @FindBy(xpath = "//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']") public WebElement ContinueOptionStandard;
+    @FindBy(xpath = "//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']") public WebElement withoutFlightFlex;
 
 
     public Spirit_Passenger_Info_Elements(WebDriver driver) {

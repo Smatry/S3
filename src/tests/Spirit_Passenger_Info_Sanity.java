@@ -324,16 +324,15 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(4000);
         //Seat Page
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//button[@data-qa='seats-sticky-footer.next-button']")).click();
+        App().Pages().SpiritPassengerInfoPage().ContinueSelected();
         Thread.sleep(3000);
-
         //Option Page
         Thread.sleep(5000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         Thread.sleep(5000);
-        driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
+        App().Pages().SpiritPassengerInfoPage().ContinueOptionStandard();
         Thread.sleep(5000);
-        driver.findElement(By.xpath("//div[@class='d-flex justify-content-center mt-2'] //button[@data-qa='lastChanceUpsellModal.decline.cta']")).click();
+        App().Pages().SpiritPassengerInfoPage().ContinueWithoutFlightFlex();
         Thread.sleep(5000);
 
         //Payment page
