@@ -282,8 +282,8 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
 
-        String expectedURL = "https://qa01.nk.spirit.com/book/bundles";
-        String expectedTitle = "Upgrade & Save | Spirit Airlines";
+        String expectedURL = "https://qa01.nk.spirit.com/book/confirmation";
+        String expectedTitle = "You’re Booked | Spirit Airlines";
         App().Pages().SpiritPassengerInfoPage().Title("Mr");
         Thread.sleep(2000);
         App().Pages().SpiritPassengerInfoPage().FirstName("Bob");
@@ -310,25 +310,18 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(2000);
         App().Pages().SpiritPassengerInfoPage().Continue();
         Thread.sleep(4000);
-
         //Bundle Page
         ((JavascriptExecutor)driver).executeScript("scroll(0,300)");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//button[@data-qa='bundle-cta-button-BF']")).click();
+        App().Pages().SpiritPassengerInfoPage().BundleStandardSelected();
         Thread.sleep(4000);
-
-
         //Bags Page
         ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
         Thread.sleep(4000);
-        driver.findElement(By.xpath("//i[contains(@class,'add-circle')]")).click();
+        App().Pages().SpiritPassengerInfoPage().AddingCarryOnBag();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//i[contains(@class,'add-circle')]")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']")).click();
+        App().Pages().SpiritPassengerInfoPage().ContinueWithStandard();
         Thread.sleep(4000);
-
-
         //Seat Page
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-qa='seats-sticky-footer.next-button']")).click();
@@ -364,11 +357,11 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         driver.findElement(By.id("billingState")).sendKeys("Florida");
         Thread.sleep(3000);
         driver.findElement(By.id("billingZipPostal")).sendKeys("33333");
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//label[@for='termsCheck']")).click();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,2500)");
-        Thread.sleep(8000);
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//div//button[@name='paymentSubmit']")).click();
         Thread.sleep(8000);
 

@@ -102,5 +102,21 @@ public class Spirit_Passenger_Info_Page {
         PassSearchElement.confirm.click();
     }
 
+   public void BundleStandardSelected () {
+       PassSearchElement.bundleSelect.click();
+
+   }
+
+   public void AddingCarryOnBag () {
+       PassSearchElement.addCarryOn.click();
+
+   }
+
+   public void ContinueWithStandard () {
+       PassSearchElement.continueStandard.click();
+
+
+   }
+
 
 }

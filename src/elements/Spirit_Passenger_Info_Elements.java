@@ -48,7 +48,9 @@ public class Spirit_Passenger_Info_Elements {
     @FindBy(xpath = "//button[@data-qa='passenger-page-continue']") public WebElement confirm;
 
     //End To End
-
+    @FindBy(xpath = "//button[@data-qa='bundle-cta-button-BF']") public WebElement bundleSelect;
+    @FindBy(xpath = "/i[contains(@class,'add-circle')]") public WebElement addCarryOn;
+    @FindBy(xpath = "//button[@data-track='continue-with-standard'] //div[@class='ng-star-inserted']") public WebElement continueStandard;
 
 
     public Spirit_Passenger_Info_Elements(WebDriver driver) {
