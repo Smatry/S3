@@ -1,5 +1,6 @@
 package elements;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -61,7 +62,9 @@ public class Spirit_Passenger_Info_Elements {
     @FindBy(id = "billingAddress") public WebElement billingAddress;
     @FindBy(id = "billingCity") public WebElement billingCity;
     @FindBy(id = "billingState") public WebElement billingState;
-
+    @FindBy(id = "billingZipPostal") public WebElement zipPostal;
+    @FindBy(xpath = "label[@for='termsCheck']") public WebElement termsConditions;
+    @FindBy(xpath = "//div//button[@name='paymentSubmit']") public WebElement paymentSubmit;
 
 
 

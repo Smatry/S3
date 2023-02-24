@@ -354,13 +354,13 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         Thread.sleep(3000);
         App().Pages().SpiritPassengerInfoPage().BillingState ("Florida");
         Thread.sleep(3000);
-        driver.findElement(By.id("billingZipPostal")).sendKeys("33333");
+        App().Pages().SpiritPassengerInfoPage().BillingZipCode ("33333");
         Thread.sleep(4000);
-        driver.findElement(By.xpath("//label[@for='termsCheck']")).click();
+        App().Pages().SpiritPassengerInfoPage().TermsAndConditionsCheckBox();
         Thread.sleep(4000);
         ((JavascriptExecutor)driver).executeScript("scroll(0,2500)");
         Thread.sleep(5000);
-        driver.findElement(By.xpath("//div//button[@name='paymentSubmit']")).click();
+        App().Pages().SpiritPassengerInfoPage().PaymentSubmit();
         Thread.sleep(8000);
 
         String newUrl = driver.getCurrentUrl();

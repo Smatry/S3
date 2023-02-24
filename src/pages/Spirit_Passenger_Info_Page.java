@@ -174,5 +174,22 @@ public class Spirit_Passenger_Info_Page {
 
     }
 
+    public void BillingZipCode (String zipcode) {
+        PassSearchElement.zipPostal.sendKeys(zipcode);
+
+
+    }
+
+    public void TermsAndConditionsCheckBox () {
+        PassSearchElement.termsConditions.click();
+
+    }
+
+    public void PaymentSubmit () {
+        PassSearchElement.paymentSubmit.click();
+
+
+    }
+
 
 }
