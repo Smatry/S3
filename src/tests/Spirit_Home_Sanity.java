@@ -87,7 +87,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
-    @Test(groups = {"P1"})
+    @Test(groups = {"P2"})
     public void Contact_Us_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();

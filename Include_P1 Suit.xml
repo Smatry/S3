@@ -1,15 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
 <suite name ="P1_Suite">
-    <test name="Regression 2023.2 Full Test">
         <groups>
             <run>
                 <include name="P1"/>
             </run>
         </groups>
-        <classes>
+            <test name="Regression 2023.2 Full Test">
+                <classes>
             <class name="tests.Spirit_Home_Sanity"/>
             <class name="tests.Spirit_My_Trips_Sanity"/>
             <class name="tests.Spirit_Passenger_Info_Sanity"/>
             <class name="tests.Spirit_User_Acc_Sanity"/>
-        </classes>
+                </classes>
     </test>
 </suite>
