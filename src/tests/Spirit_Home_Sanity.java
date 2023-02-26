@@ -12,7 +12,7 @@ import java.util.List;
 public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
 
-    @Test
+    @Test(groups = {"P1"})
     public void My_Trips_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
@@ -27,7 +27,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P1"})
     public void Check_In_Url() throws Exception {
 
 
@@ -43,7 +43,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P1"})
     public void Flight_Status_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
@@ -58,7 +58,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P1"})
     public void Free_Spirit_Header_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
@@ -72,7 +72,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P1"})
     public void Deals_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
@@ -87,7 +87,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P1"})
     public void Contact_Us_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();
