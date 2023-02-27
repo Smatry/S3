@@ -1,0 +1,15 @@
+<suite name ="P2 Test Suite">
+    <groups>
+        <run>
+            <include name="P2"/>
+        </run>
+    </groups>
+    <test name="Regression 2023.2 P2 Test">
+        <classes>
+            <class name="tests.Spirit_Home_Sanity"/>
+            <class name="tests.Spirit_My_Trips_Sanity"/>
+            <class name="tests.Spirit_Passenger_Info_Sanity"/>
+            <class name="tests.Spirit_User_Acc_Sanity"/>
+        </classes>
+    </test>
+</suite>

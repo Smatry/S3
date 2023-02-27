@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef088cdb-0bf7-48fe-ba8b-6e78f2117500" name="Changes" comment="last push">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Include_P2 Suite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Include_P1 Suit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Include_P1 Suit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/AbstractHomeBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AbstractHomeBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/AbstractMyTripsBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AbstractMyTripsBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/AbstractPassengerInfoBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AbstractPassengerInfoBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/AbstractUserAccBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AbstractUserAccBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_My_Trips_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_My_Trips_Sanity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Passenger_Info_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Passenger_Info_Sanity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" afterDir="false" />
@@ -317,7 +314,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677416001721</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="last push">
+      <created>1677530852700</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1677530852700</updated>
+    </task>
+    <task id="LOCAL-00024" summary="last push">
+      <created>1677530988219</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1677530988219</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -212,7 +212,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
 
     }
 
-    @Test
+    @Test(groups = {"P2"})
     public void Phone_Number_Country_Code_DD () {
 
         SoftAssert sa = new SoftAssert();

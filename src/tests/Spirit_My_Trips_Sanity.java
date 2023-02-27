@@ -18,7 +18,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
     }
 
 
-    @Test
+    @Test(groups = {"P2"})
     public void Spirit_logo_link_navigates_home_page() throws Exception {
 
         SoftAssert sa = new SoftAssert();
@@ -51,7 +51,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P2"})
     public void Create_An_Acc() throws Exception {
 
         SoftAssert sa = new SoftAssert();
@@ -65,7 +65,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P2"})
     public void Forgot_Password_Url() throws Exception {
 
 

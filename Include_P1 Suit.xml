@@ -4,7 +4,7 @@
                 <include name="P1"/>
             </run>
         </groups>
-            <test name="Regression 2023.2 Full Test">
+            <test name="Regression 2023.2 P1 Test">
                 <classes>
             <class name="tests.Spirit_Home_Sanity"/>
             <class name="tests.Spirit_My_Trips_Sanity"/>

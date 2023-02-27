@@ -87,7 +87,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P2"})
     public void Offers() throws Exception {
 
         SoftAssert sa = new SoftAssert();
@@ -114,7 +114,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P2"})
     public void Saver_$_Club() throws Exception {
 
         SoftAssert sa = new SoftAssert();
