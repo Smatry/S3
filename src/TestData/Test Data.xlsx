@@ -20,6 +20,19 @@
   "userType": "BaseMilitary",
   "email": "mikesmithFSbase@spirit.com",
   "password": "Brandy12$",
-  "fsNumber": "1001003036"
+  "fsNumber": "1001003040"
+
+}
+{
+  "userType": "SilverMilitary",
+  "email": "mikesmithFSsliver@spirit.com",
+  "password": "Brandy12$",
+  "fsNumber": "1001003041"
+}
+{
+  "userType": "GoldMilitary",
+  "email": "mikesmithFSgold@spirit.com",
+  "password": "Brandy12$",
+  "fsNumber": "1001003042"
 
 }
