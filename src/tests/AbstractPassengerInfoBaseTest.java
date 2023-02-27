@@ -39,9 +39,11 @@ public class AbstractPassengerInfoBaseTest {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']")).click();
         Thread.sleep(5000);
+        ((JavascriptExecutor) driver).executeScript("scroll(0,-400)");
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//app-availability-fare-picker//div//app-availability-journey//div[@class='p-grid__standard-price']")).click();
         Thread.sleep(4000);
-        ((JavascriptExecutor) driver).executeScript("scroll(0,300)");
+        ((JavascriptExecutor) driver).executeScript("scroll(0,-300)");
         Thread.sleep(4000);
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
         Thread.sleep(8000);
