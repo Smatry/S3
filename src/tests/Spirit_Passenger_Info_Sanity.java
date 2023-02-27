@@ -193,7 +193,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         sa.assertTrue(arr1.equals(arr2));
 
     }
-    @Test
+    @Test(groups = {"P1"})
     public void Country_DD() {
 
         SoftAssert sa = new SoftAssert();

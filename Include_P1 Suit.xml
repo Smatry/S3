@@ -1,6 +1,4 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-
-<suite name ="P1_Suite">
+<suite name ="P1 Test Suite">
         <groups>
             <run>
                 <include name="P1"/>
@@ -13,5 +11,5 @@
             <class name="tests.Spirit_Passenger_Info_Sanity"/>
             <class name="tests.Spirit_User_Acc_Sanity"/>
                 </classes>
-    </test>
+           </test>
 </suite>

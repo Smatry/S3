@@ -17,7 +17,7 @@ public class AbstractUserAccBaseTest {
 
     private AppLib app;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\96910\\Downloads\\chromedriver_win32\\chromedriver.exe");
@@ -35,7 +35,7 @@ public class AbstractUserAccBaseTest {
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown(){
         driver.close();
 

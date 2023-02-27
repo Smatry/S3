@@ -16,7 +16,7 @@ public class AbstractPassengerInfoBaseTest {
     private AppLib app;
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\96910\\Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
@@ -41,7 +41,7 @@ public class AbstractPassengerInfoBaseTest {
         Thread.sleep(5000);
         driver.findElement(By.xpath("//app-availability-fare-picker//div//app-availability-journey//div[@class='p-grid__standard-price']")).click();
         Thread.sleep(4000);
-        ((JavascriptExecutor) driver).executeScript("scroll(0,600)");
+        ((JavascriptExecutor) driver).executeScript("scroll(0,300)");
         Thread.sleep(4000);
         driver.findElement(By.xpath("//section//div//button[@data-qa='pricing-breakdown-standard-cta']")).click();
         Thread.sleep(8000);
@@ -51,7 +51,7 @@ public class AbstractPassengerInfoBaseTest {
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.close();
 

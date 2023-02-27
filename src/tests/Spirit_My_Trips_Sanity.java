@@ -5,7 +5,7 @@ import org.testng.asserts.SoftAssert;
 
 public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
 
-    @Test
+    @Test(groups = {"P1"})
     public void my_Trip_Page_Url() throws Exception {
 
         SoftAssert sa = new SoftAssert();

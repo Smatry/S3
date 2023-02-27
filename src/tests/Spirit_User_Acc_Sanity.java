@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
 
-    @Test
+    @Test(groups = {"P1"})
     public void logged_In() throws Exception {
 
         SoftAssert sa = new SoftAssert();
