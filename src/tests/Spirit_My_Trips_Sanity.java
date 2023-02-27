@@ -31,7 +31,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P1"})
     public void Sing_In_To_Acc() throws Exception {
 
         SoftAssert sa = new SoftAssert();

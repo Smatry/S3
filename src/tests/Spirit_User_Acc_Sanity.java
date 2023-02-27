@@ -34,7 +34,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
 
-    @Test
+    @Test(groups = {"P1"})
     public void Dashboard() throws Exception {
 
         SoftAssert sa = new SoftAssert();
