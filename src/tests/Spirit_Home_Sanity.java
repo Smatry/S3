@@ -220,6 +220,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     public void Booking_Flight_Confirm() throws Exception {
 
         SoftAssert sa = new SoftAssert();
+
         String expectedURL = "https://qa01.nk.spirit.com/book/flights";
         App().Pages().SpiritHomePage().TripTypeSelect();
         Thread.sleep(2000);
