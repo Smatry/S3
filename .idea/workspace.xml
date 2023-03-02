@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef088cdb-0bf7-48fe-ba8b-6e78f2117500" name="Changes" comment="last push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Spirit_My_Trip_Page_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Spirit_My_Trip_Page_Elements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
       <recent name="Libraries" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Spirit_Home_Sanity.Saver_Club_Url">
+  <component name="RunManager" selected="TestNG.C:/Users/96910/IdeaProjects/spirit-test 3/Include_P1 Suit.xml">
     <configuration name="C:/Users/96910/IdeaProjects/spirit-test 3/Include_P1 Suit.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Include_P1 Suit.xml" />
@@ -140,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/96910/IdeaProjects/spirit-test 3/Include_P1 Suit.xml" />
         <item itemvalue="TestNG.Spirit_Home_Sanity.Saver_Club_Url" />
         <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.Reset_Password_Url" />
         <item itemvalue="TestNG.C:/Users/96910/IdeaProjects/spirit-test 3/Include_P2 Suite.xml" />
-        <item itemvalue="TestNG.C:/Users/96910/IdeaProjects/spirit-test 3/Include_P1 Suit.xml" />
         <item itemvalue="TestNG.Spirit_Home_Sanity.My_Trips_Url" />
       </list>
     </recent_temporary>
@@ -360,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677536339358</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="last push">
+      <created>1677780344073</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1677780344073</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
