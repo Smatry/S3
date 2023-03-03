@@ -59,7 +59,7 @@ public class Spirit_Home_Page_Elements {
 
 
      // Booking_Flight_Confirm
-     @FindBy(xpath = "//section//div//button[@data-qa='pricing-breakdown-standard-cta']") public WebElement Confirm;
+     @FindBy(xpath = "//app-availability-fare-picker//div//app-availability-journey//div[@class='p-grid__standard-price']") public WebElement Confirm;
 
      //Create_An_Acc
      @FindBy(xpath = "//a[@data-qa='home-page.common-header-login']") public WebElement singInHeader;
