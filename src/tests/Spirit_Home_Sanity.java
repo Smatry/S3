@@ -258,7 +258,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(2000);
         App().Pages().SpiritHomePage().Password("Brandy12$");
         Thread.sleep(4000);
-        driver.findElement(By.xpath("//div//input[@class='checkBox ng-untouched ng-dirty ng-invalid']")).click();
+        driver.findElement(By.xpath("//input[@class='checkBox ng-untouched ng-dirty ng-valid']")).click();
         Thread.sleep(4000);
         App().Pages().SpiritHomePage().SingUp();
         Thread.sleep(2000);
