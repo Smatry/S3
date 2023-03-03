@@ -754,4 +754,58 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
+
+
+
+
+    @Test
+    public void  Search_Button_Enable() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritHomePage().TripTypeSelect();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().SelectedOneWay();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().ToStationDropDownMenu();
+        Thread.sleep(5000);
+        App().Pages().SpiritHomePage().ToStationSelected();
+        Thread.sleep(2000);
+
+        sa.assertTrue(driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']")).isEnabled(),  "Verify Search Button Enable");
+
+    }
+    @Test
+    public void Apply_Now_Spirit_Master_Card_Enable() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.xpath("//div//a[@class='cc-button-credit-card text-uppercase display-desktop text-center btn btn-primary']")).isEnabled(), "Verify Search Button Enable");
+        Thread.sleep(2000);
+
+    }
+
+    @Test
+    public void  Join_Saver_Club_Displayed() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.xpath("//img[@alt='savers_club_image']")).isDisplayed(), "Verify Search Button Display");
+        Thread.sleep(2000);
+
+    }
+
+    @Test
+    public void Join_Free_Spirit_Displayed() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.className("sp-image")).isDisplayed(), "Verify Search Button Display");
+        Thread.sleep(2000);
+
+    }
+
 }
