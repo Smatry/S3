@@ -1,9 +1,13 @@
 package tests;
 
+import Utils.DataUnit1;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import java.util.HashMap;
 
 public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
@@ -460,5 +464,18 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
 
+
+
+    @Test (description = "Test Data1.json", dataProviderClass = DataUnit1.class, dataProvider = "dataProvider1")
+    public void Ability_To_Use_Test_Data_JSONFile(HashMap<String, String> hashMap) throws Exception {
+
+        App().Pages().SpiritUserAccPage().EmailData(hashMap.get("email"));
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("password");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+
+    }
 
 }
