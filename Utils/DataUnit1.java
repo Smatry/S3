@@ -12,8 +12,6 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Set;
 
-
-
 public class DataUnit1 extends Spirit_User_Acc_Sanity {
 
     @DataProvider
