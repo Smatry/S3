@@ -311,8 +311,8 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
         App().Pages().SpiritPassengerInfoPage().Continue();
         Thread.sleep(4000);
         //Bundle Page
-        ((JavascriptExecutor)driver).executeScript("scroll(0,300)");
-        Thread.sleep(3000);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
+        Thread.sleep(4000);
         App().Pages().SpiritPassengerInfoPage().BundleStandardSelected();
         Thread.sleep(4000);
         //Bags Page

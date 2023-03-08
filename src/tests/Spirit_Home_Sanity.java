@@ -755,9 +755,6 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
 
-
-
-
     @Test
     public void  Search_Button_Enable() throws Exception {
 
@@ -772,7 +769,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         App().Pages().SpiritHomePage().ToStationSelected();
         Thread.sleep(2000);
 
-        sa.assertTrue(driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']")).isEnabled(),  "Verify Search Button Enable");
+        sa.assertTrue(App().Pages().SpiritHomePage().SearchButtonEnable(),  "Verify Search Button Enable");
 
     }
     @Test

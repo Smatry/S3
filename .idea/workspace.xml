@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ef088cdb-0bf7-48fe-ba8b-6e78f2117500" name="Changes" comment="last push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestData/Test Data1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestData/Test Data1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Spirit_Home_Page_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Spirit_Home_Page_Elements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Spirit_Home_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Spirit_Home_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Passenger_Info_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Passenger_Info_Sanity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,63 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/96910/Downloads/json-simple-1.1.1.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/96910/Downloads/json-simple-1.1.1.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Libraries" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Spirit_User_Acc_Sanity.Ability_To_Use_Test_Data_JSONFile">
-    <configuration name="DataUnit1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="spirit-test 3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Utils" />
-      <option name="MAIN_CLASS_NAME" value="Utils.DataUnit1" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DataUnit2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="spirit-test 3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Utils" />
-      <option name="MAIN_CLASS_NAME" value="Utils.DataUnit2" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Spirit_Home_Sanity.Search_Button_Enable">
     <configuration name="Spirit_Home_Sanity.Join_Free_Spirit_Displayed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
@@ -114,6 +84,42 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
       <option name="METHOD_NAME" value="Join_Free_Spirit_Displayed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spirit_Home_Sanity.Search_Button_Enable" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="spirit-test 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Search_Button_Enable" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spirit_Passenger_Info_Sanity.OW_Booking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="spirit-test 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Passenger_Info_Sanity" />
+      <option name="METHOD_NAME" value="OW_Booking" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_User_Acc_Sanity.logged_In" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_User_Acc_Sanity.Edit_Profile_Adding_Info" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -149,7 +155,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Spirit_User_Acc_Sanity" />
-      <option name="METHOD_NAME" value="logged_In" />
+      <option name="METHOD_NAME" value="Edit_Profile_Adding_Info" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -159,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Ability_To_Use_Test_Data_JSONFile" />
-        <item itemvalue="TestNG.DataUnit1" />
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.logged_In" />
-        <item itemvalue="TestNG.DataUnit2" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Search_Button_Enable" />
         <item itemvalue="TestNG.Spirit_Home_Sanity.Join_Free_Spirit_Displayed" />
+        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.OW_Booking" />
+        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Edit_Profile_Adding_Info" />
+        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Ability_To_Use_Test_Data_JSONFile" />
       </list>
     </recent_temporary>
   </component>
@@ -470,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678131334378</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="last push">
+      <created>1678141469232</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1678141469232</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

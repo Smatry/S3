@@ -72,6 +72,16 @@ public class Spirit_Home_Page_Elements {
      @FindBy (xpath = "//div//input[@class='checkBox ng-untouched ng-dirty ng-invalid']") public WebElement checkBox;
      @FindBy (xpath = "//div//button[@data-qa='fs-sign-up-button']") public WebElement singUp;
 
+
+     // Search Button Enable
+     @FindBy (xpath = "//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']") public WebElement searchBtn;
+
+     // Apply_Now_Spirit_Master_Card_Enable
+     @FindBy (xpath = "//div//a[@class='cc-button-credit-card text-uppercase display-desktop text-center btn btn-primary']") public WebElement applyMasterCardCTS;
+
+
+
+
      public Spirit_Home_Page_Elements(WebDriver driver) {
          this.driver = driver;
          PageFactory.initElements(driver, this);

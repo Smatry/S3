@@ -153,6 +153,9 @@ public class Spirit_Home_Page {
         homeSearchElements.standardPricing.click();
 
     }
+    public boolean SearchButtonEnable () {
+        return homeSearchElements.searchBtn.isEnabled();
+    }
 
 
 }
