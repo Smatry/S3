@@ -165,5 +165,8 @@ public class Spirit_Home_Page {
         return homeSearchElements.joinServerClubImageIsDisplayed.isDisplayed();
 
     }
+    public boolean JoinFreeSpiritDisplayed () {
+        return homeSearchElements.joinFreeSpiritDisplayed.isDisplayed();
+    }
 
 }

@@ -82,6 +82,9 @@ public class Spirit_Home_Page_Elements {
      // Join Saver Club Displayed
      @FindBy (xpath = "//img[@alt='savers_club_image']") public WebElement joinServerClubImageIsDisplayed;
 
+     // Join Free Spirit Displayed
+     @FindBy (className = "sp-image") public WebElement joinFreeSpiritDisplayed;
+
 
 
      public Spirit_Home_Page_Elements(WebDriver driver) {

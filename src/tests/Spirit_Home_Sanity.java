@@ -754,12 +754,10 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
-
     @Test
     public void  Search_Button_Enable() throws Exception {
 
         SoftAssert sa = new SoftAssert();
-
         App().Pages().SpiritHomePage().TripTypeSelect();
         Thread.sleep(2000);
         App().Pages().SpiritHomePage().SelectedOneWay();
@@ -778,7 +776,6 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(2000);
         sa.assertTrue(App().Pages().SpiritHomePage().ApplyMasterCardEnable(), "Verify Search Button Enable");
         Thread.sleep(2000);
-
     }
 
     @Test
@@ -788,16 +785,14 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(2000);
         sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed(), "Verify Search Button Display");
         Thread.sleep(2000);
-
     }
 
     @Test
     public void Join_Free_Spirit_Displayed() throws Exception {
 
         SoftAssert sa = new SoftAssert();
-
         Thread.sleep(2000);
-        sa.assertTrue(driver.findElement(By.className("sp-image")).isDisplayed(), "Verify Search Button Display");
+        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed(), "Verify Search Button Display");
         Thread.sleep(2000);
 
     }
