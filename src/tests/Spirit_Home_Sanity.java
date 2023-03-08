@@ -768,7 +768,6 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(5000);
         App().Pages().SpiritHomePage().ToStationSelected();
         Thread.sleep(2000);
-
         sa.assertTrue(App().Pages().SpiritHomePage().SearchButtonEnable(),  "Verify Search Button Enable");
 
     }
@@ -776,9 +775,8 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     public void Apply_Now_Spirit_Master_Card_Enable() throws Exception {
 
         SoftAssert sa = new SoftAssert();
-
         Thread.sleep(2000);
-        sa.assertTrue(driver.findElement(By.xpath("//div//a[@class='cc-button-credit-card text-uppercase display-desktop text-center btn btn-primary']")).isEnabled(), "Verify Search Button Enable");
+        sa.assertTrue(App().Pages().SpiritHomePage().ApplyMasterCardEnable(), "Verify Search Button Enable");
         Thread.sleep(2000);
 
     }
@@ -787,9 +785,8 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     public void  Join_Saver_Club_Displayed() throws Exception {
 
         SoftAssert sa = new SoftAssert();
-
         Thread.sleep(2000);
-        sa.assertTrue(driver.findElement(By.xpath("//img[@alt='savers_club_image']")).isDisplayed(), "Verify Search Button Display");
+        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed(), "Verify Search Button Display");
         Thread.sleep(2000);
 
     }

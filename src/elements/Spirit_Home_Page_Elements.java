@@ -79,6 +79,8 @@ public class Spirit_Home_Page_Elements {
      // Apply_Now_Spirit_Master_Card_Enable
      @FindBy (xpath = "//div//a[@class='cc-button-credit-card text-uppercase display-desktop text-center btn btn-primary']") public WebElement applyMasterCardCTS;
 
+     // Join Saver Club Displayed
+     @FindBy (xpath = "//img[@alt='savers_club_image']") public WebElement joinServerClubImageIsDisplayed;
 
 
 

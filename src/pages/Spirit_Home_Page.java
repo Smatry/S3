@@ -157,5 +157,13 @@ public class Spirit_Home_Page {
         return homeSearchElements.searchBtn.isEnabled();
     }
 
+    public boolean ApplyMasterCardEnable () {
+        return homeSearchElements.applyMasterCardCTS.isEnabled();
+    }
+
+    public boolean JoinServerClubImageDisplayed () {
+        return homeSearchElements.joinServerClubImageIsDisplayed.isDisplayed();
+
+    }
 
 }
