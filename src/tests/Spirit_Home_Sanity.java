@@ -797,4 +797,16 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
+    @Test
+    public  void  Show_Fares_In_Points_Selected() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//label[@class='custom-control-label ng-star-inserted']")).click();
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.xpath("//label[@class='custom-control-label ng-star-inserted']")).isSelected (), "Verify Search Button Selected");
+        Thread.sleep(2000);
+
+    }
+
 }
