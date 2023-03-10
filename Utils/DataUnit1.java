@@ -32,9 +32,9 @@ public class DataUnit1 extends Spirit_User_Acc_Sanity {
                 hashMap.put(jsonObjKey, (String) jsonObject.get(jsonObjKey));
             }
         }
-            data[0] = hashMap;
-            return (Object[][]) data;
+        data[0]=hashMap;
+        return(Object[][])data;
 
-        }
+    }
 
 }

@@ -780,12 +780,14 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
     @Test
-    public void Choose_Your_Flight_Is_Enable() throws Exception {
+    public void Sing_In_To_Acc_IsEnable() throws Exception {
 
         SoftAssert sa = new SoftAssert();
-        Thread.sleep(3000);
-        sa.assertTrue(driver.findElement(By.xpath ("//button[@class='btn btn-primary btn-lg search-button ng-star-inserted t110-cta']")).isEnabled());
-        Thread.sleep(3000);
+
+        App().Pages().SpiritHomePage().SingInHeader();
+        Thread.sleep(2000);
+        sa.assertTrue(App().Pages().SpiritHomePage().SingInIsEnabled());
+        Thread.sleep(2000);
 
     }
 
@@ -818,7 +820,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
     @Test
-    public void Travel_Adviser_Link_Displayed_Enable () throws  Exception {
+    public void Travel_Adviser_Link() throws  Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);

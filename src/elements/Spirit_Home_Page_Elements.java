@@ -73,17 +73,21 @@ public class Spirit_Home_Page_Elements {
      @FindBy (xpath = "//div//button[@data-qa='fs-sign-up-button']") public WebElement singUp;
 
 
-     // Search Button Enable
+     // Search_Button_Enable
      @FindBy (xpath = "//button[@class='btn btn-primary btn-lg search-button ng-tns-c165-3 ng-star-inserted']") public WebElement searchBtn;
 
      // Apply_Now_Spirit_Master_Card_Enable
      @FindBy (xpath = "//div//a[@class='cc-button-credit-card text-uppercase display-desktop text-center btn btn-primary']") public WebElement applyMasterCardCTS;
 
-     // Join Saver Club Displayed
+     // Join_Saver_Club_Displayed
      @FindBy (xpath = "//img[@alt='savers_club_image']") public WebElement joinServerClubImageIsDisplayed;
 
-     // Join Free Spirit Displayed
+     // Join_Free_Spirit_Displayed
      @FindBy (className = "sp-image") public WebElement joinFreeSpiritDisplayed;
+
+     // Sing_IN_IsEnable
+     @FindBy (xpath = "//button[@class='btn btn-block btn-primary btn-responsive']") public WebElement SingINIsEnable;
+
 
 
 
