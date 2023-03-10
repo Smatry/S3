@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -16,7 +17,6 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
     }
-
 
     @Test(groups = {"P2"})
     public void Spirit_logo_link_navigates_home_page() throws Exception {
@@ -80,6 +80,34 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
     }
+    @Test
+    public void Sing_In_Is_Enabled() throws Exception{
 
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.xpath("//button[@class='btn btn-primary btn-responsive']")).isEnabled());
+
+    }
+    @Test
+    public void Create_An_Account_Enabled() throws Exception {
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.xpath("//button[@class='btn btn-secondary btn-responsive']")).isEnabled());
+    }
+
+    @Test
+    public void Find_My_Trip_Continue_Enabled() throws Exception {
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.xpath("//button[@data-qa='home-page.manage-travel-home-form-find-trip-continue-link']")).isEnabled());
+
+    }
+    @Test
+    public void Spirit_Logo_Displayed() throws Exception {
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.xpath("//img[@class='logo h-100']")).isDisplayed());
+
+    }
 
 }

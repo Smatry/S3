@@ -811,7 +811,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
     @Test
-    public  void  Free_Spirit_World_Elite_Mastercard_Displayed() throws Exception {
+    public void Free_Spirit_World_Elite_Mastercard_Displayed() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
