@@ -3,6 +3,7 @@ package tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import java.util.ArrayList;
@@ -776,6 +777,16 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(2000);
         sa.assertTrue(App().Pages().SpiritHomePage().ApplyMasterCardEnable());
         Thread.sleep(2000);
+    }
+
+    @Test
+    public void Choose_Your_Flight_Is_Enable() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(3000);
+        sa.assertTrue(driver.findElement(By.xpath ("//button[@class='btn btn-primary btn-lg search-button ng-star-inserted t110-cta']")).isEnabled());
+        Thread.sleep(3000);
+
     }
 
     @Test
