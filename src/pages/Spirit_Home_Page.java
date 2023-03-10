@@ -169,4 +169,7 @@ public class Spirit_Home_Page {
         return homeSearchElements.joinFreeSpiritDisplayed.isDisplayed();
     }
 
+    public boolean FreeSpiritWorldEliteMastercardImageDisplayed () {
+        return homeSearchElements.BankOfAmSTA.isDisplayed();
+    }
 }

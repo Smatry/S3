@@ -766,7 +766,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         Thread.sleep(5000);
         App().Pages().SpiritHomePage().ToStationSelected();
         Thread.sleep(2000);
-        sa.assertTrue(App().Pages().SpiritHomePage().SearchButtonEnable(),  "Verify Search Button Enable");
+        sa.assertTrue(App().Pages().SpiritHomePage().SearchButtonEnable());
 
     }
     @Test
@@ -774,7 +774,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(App().Pages().SpiritHomePage().ApplyMasterCardEnable(), "Verify Search Button Enable");
+        sa.assertTrue(App().Pages().SpiritHomePage().ApplyMasterCardEnable());
         Thread.sleep(2000);
     }
 
@@ -783,7 +783,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed(), "Verify Search Button Display");
+        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed());
         Thread.sleep(2000);
     }
 
@@ -792,20 +792,36 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed(), "Verify Search Button Display");
+        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed());
         Thread.sleep(2000);
 
     }
 
     @Test
-    public  void  Show_Fares_In_Points_Selected() throws Exception {
+    public  void  Free_Spirit_World_Elite_Mastercard_Displayed() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//label[@class='custom-control-label ng-star-inserted']")).click();
+        sa.assertTrue(App().Pages().SpiritHomePage().FreeSpiritWorldEliteMastercardImageDisplayed());
         Thread.sleep(2000);
-        sa.assertTrue(driver.findElement(By.xpath("//label[@class='custom-control-label ng-star-inserted']")).isSelected (), "Verify Search Button Selected");
+
+    }
+    @Test
+    public void Travel_Adviser_Link_Displayed_Enable () throws  Exception {
+
+        SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
+        String expectedURL = "https://www.spirit.com/travel-advisory";
+        String expectedTitle = "Travel Advisories | Spirit Airlines";
+        driver.get("https://www.spirit.com/travel-advisory");
+        Thread.sleep(3000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
 
     }
 
