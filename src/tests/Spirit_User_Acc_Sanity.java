@@ -17,9 +17,9 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("lennoxscgld@qa.test");
         Thread.sleep(2000);
-        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Zxasqw12!");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(5000);
@@ -30,7 +30,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
-        Thread.sleep(5000);
+        Thread.sleep(6000);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -43,9 +43,9 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("lennoxscgld@qa.test");
         Thread.sleep(2000);
-        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Zxasqw12!");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(5000);
@@ -57,7 +57,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         String newTitle = App().Flow().getCurrentPageTitle();
         System.out.println(newUrl);
         System.out.println(newTitle);
-        Thread.sleep(5000);
+        Thread.sleep(6000);
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
         sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
@@ -69,9 +69,9 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("lennoxscgld@qa.test");
         Thread.sleep(2000);
-        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Zxasqw12!");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(5000);
@@ -96,9 +96,9 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
         SoftAssert sa = new SoftAssert();
 
-        App().Pages().SpiritUserAccPage().EmailData("mikesmithFSgold@spirit.com");
+        App().Pages().SpiritUserAccPage().EmailData("lennoxscgld@qa.test");
         Thread.sleep(2000);
-        App().Pages().SpiritUserAccPage().PasswordData("Brandy12$");
+        App().Pages().SpiritUserAccPage().PasswordData("Zxasqw12!");
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(5000);

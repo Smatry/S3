@@ -1,20 +1,22 @@
-[
 {
-  "userType":"SCMember",
-  "email":"lennoxsc@qa.test",
-  "password":"Zxasqw12!",
-  "fsNumber":"1001639356"
-},
-{
-  "userType":"SCSilver",
-  "email":"lennoxslvsc@qa.test",
-  "password":"Zxasqw12!",
-  "fsNumber":"1001639358"
-},
-{
-  "userType":"SCGold",
-  "email":"lennoxscgld@qa.test",
-  "password":"Zxasqw12!",
-  "fsNumber":"1001639656"
+  "userLogins": [
+    {
+      "userType": "SCMember",
+      "email": "lennoxsc@qa.test",
+      "password": "Zxasqw12!",
+      "fsNumber": "1001639356"
+    },
+    {
+       "userType":"SCSilver",
+       "email":"lennoxslvsc@qa.test",
+       "password":"Zxasqw12!",
+       "fsNumber":"1001639358"
+    },
+    {
+        "userType":"SCGold",
+        "email":"lennoxscgld@qa.test",
+        "password":"Zxasqw12!",
+        "fsNumber":"1001639656"
+    }
+  ]
 }
-]
