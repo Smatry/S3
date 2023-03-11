@@ -1,20 +1,20 @@
 [
 {
-  "userType":"BaseMember",
-  "email":"mikesmithFSbase@spirit.com",
-  "password":"Brandy12$",
-  "fsNumber":"1001003036"
+  "userType":"SCMember",
+  "email":"lennoxsc@qa.test",
+  "password":"Zxasqw12!",
+  "fsNumber":"1001639356"
 },
 {
-  "userType":"SilverSC",
-  "email":"mikesmithFSsliver@spirit.com",
-  "password":"Brandy12$",
-  "fsNumber":"1001003038"
+  "userType":"SCSilver",
+  "email":"lennoxslvsc@qa.test",
+  "password":"Zxasqw12!",
+  "fsNumber":"1001639358"
 },
 {
-  "userType":"GoldSC",
-  "email":"mikesmithFSgold@spirit.com",
-  "password":"Brandy12$",
-  "fsNumber":"1001003039"
+  "userType":"SCGold",
+  "email":"lennoxscgld@qa.test",
+  "password":"Zxasqw12!",
+  "fsNumber":"1001639656"
 }
 ]
