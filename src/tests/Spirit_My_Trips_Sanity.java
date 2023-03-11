@@ -85,28 +85,29 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(driver.findElement(By.xpath("//button[@class='btn btn-primary btn-responsive']")).isEnabled());
+        sa.assertTrue(App().Pages().SpiritMyTripPage().SingInIsEnabled());
 
     }
     @Test
     public void Create_An_Account_Enabled() throws Exception {
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(driver.findElement(By.xpath("//button[@class='btn btn-secondary btn-responsive']")).isEnabled());
+        sa.assertTrue(App().Pages().SpiritMyTripPage().CreateAnAccEnabled());
+
     }
 
     @Test
     public void Find_My_Trip_Continue_Enabled() throws Exception {
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(driver.findElement(By.xpath("//button[@data-qa='home-page.manage-travel-home-form-find-trip-continue-link']")).isEnabled());
+        sa.assertTrue(App().Pages().SpiritMyTripPage().ContinueIsEnabled());
 
     }
     @Test
     public void Spirit_Logo_Displayed() throws Exception {
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(driver.findElement(By.xpath("//img[@class='logo h-100']")).isDisplayed());
+        sa.assertTrue(App().Pages().SpiritMyTripPage().SpiritLogoIsDisplayed());
 
     }
 

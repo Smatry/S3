@@ -23,6 +23,20 @@ public class Spirit_My_Trip_Page_Elements {
     // Forgot_Password_Url
     @FindBy (xpath = "//div//button[@routerlink='/retrieve-password']") public WebElement ForgotPassword;
 
+    // Sing_In_Is_Enabled
+    @FindBy (xpath = "//button[@class='btn btn-primary btn-responsive']") public WebElement singInEnabled;
+
+    // Create_An_Account_Enabled
+    @FindBy (xpath = "//button[@class='btn btn-secondary btn-responsive']") public WebElement CreateAnAccEnabled;
+
+    //Find_My_Trip_Continue_Enabled
+    @FindBy (xpath = "//button[@data-qa='home-page.manage-travel-home-form-find-trip-continue-link']") public WebElement continueEnabled;
+
+    //Spirit_Logo_Displayed
+    @FindBy (xpath = "//img[@class='logo h-100']") public WebElement LogoDisplayed;
+
+
+
     public Spirit_My_Trip_Page_Elements(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

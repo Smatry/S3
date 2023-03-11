@@ -12,12 +12,11 @@ public class Spirit_My_Trips_Page {
         myTripPageElements = new Spirit_My_Trip_Page_Elements(driver);
     }
 
-    // Spirit_logo_link_navigates_home_page
      public void SpiritLogo () {
         myTripPageElements.SpiritLogo.click();
 
     }
-     // Sing_In_To_Acc
+
      public void EmailData(String email) {
          myTripPageElements.EmailAddress.sendKeys(email);
      }
@@ -32,16 +31,37 @@ public class Spirit_My_Trips_Page {
 
      }
 
-    // Create_An_Acc
+
     public void CreateAnAccCTA(){
         myTripPageElements.CreateAnAccCTA.click();
     }
 
 
 
-    // Forgot_Password_Url
     public void ForgotPasswordUrl(){
         myTripPageElements.ForgotPassword.click();
      }
+
+
+     public boolean SingInIsEnabled () {
+        return myTripPageElements.singInEnabled.isEnabled();
+
+     }
+
+     public boolean CreateAnAccEnabled () {
+         return myTripPageElements.CreateAnAccEnabled.isEnabled();
+
+     }
+
+     public boolean ContinueIsEnabled () {
+         return myTripPageElements.continueEnabled.isEnabled();
+
+     }
+     public boolean SpiritLogoIsDisplayed () {
+         return myTripPageElements.LogoDisplayed.isDisplayed();
+
+     }
+
+
 
 }
