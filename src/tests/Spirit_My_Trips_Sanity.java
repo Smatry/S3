@@ -19,7 +19,7 @@ public class Spirit_My_Trips_Sanity extends AbstractMyTripsBaseTest {
     }
 
     @Test(groups = {"P2"})
-    public void Spirit_logo_link_navigates_home_page() throws Exception {
+    public void Spirit_Logo_Link_Navigates_Home_Page() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         String expectedURL = "https://qa01.nk.spirit.com/";

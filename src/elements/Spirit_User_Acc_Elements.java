@@ -62,6 +62,9 @@ public class Spirit_User_Acc_Elements {
     @FindBy(id = "address2") public WebElement address2;
     @FindBy(id = "save-personal-info") public WebElement saveInfo;
 
+    //Saver$_Club_Validation
+    @FindBy(xpath = "//div[@class='savers-club-badge']") public WebElement SCMember;
+
 
 
     public Spirit_User_Acc_Elements (WebDriver driver) {

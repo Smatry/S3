@@ -129,5 +129,8 @@ public class Spirit_User_Acc_page {
 
 
     }
+    public boolean Saver$ClubValidations () {
+        return UserAccSearchElements.SCMember.isDisplayed();
+    }
 
 }
