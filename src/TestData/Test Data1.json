@@ -1,5 +1,5 @@
-{
-  "userLogins": [
+[
+
     {
       "userType": "SCMember",
       "email": "lennoxsc@qa.test",
@@ -19,4 +19,3 @@
         "fsNumber":"1001639656"
     }
   ]
-}
