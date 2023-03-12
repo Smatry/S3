@@ -21,7 +21,7 @@ public class DataUnit1 extends Spirit_User_Acc_Sanity {
         JSONParser parser = new JSONParser();
         JSONObject jsonObject = null;
         try {
-            Object obj = parser.parse(new FileReader("src/TestData/Test Data1.json"));
+            Object obj = parser.parse(new FileReader("src/TestData/Test Data2.json"));
             jsonObject = (JSONObject) obj;
         } catch (IOException | ParseException exception) {
             exception.printStackTrace();
