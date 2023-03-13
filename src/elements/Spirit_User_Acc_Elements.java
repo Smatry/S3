@@ -65,6 +65,9 @@ public class Spirit_User_Acc_Elements {
     //Saver$_Club_Validation
     @FindBy(xpath = "//div[@class='savers-club-badge']") public WebElement SCMember;
 
+    //The_User_Has_A_Points
+    @FindBy(xpath = "//div[@class='grid-column-2-row-1 grid-center-align']//div[@class='sub-header-user-points']") public WebElement userPoint;
+
 
 
     public Spirit_User_Acc_Elements (WebDriver driver) {

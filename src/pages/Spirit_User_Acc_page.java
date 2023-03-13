@@ -118,6 +118,7 @@ public class Spirit_User_Acc_page {
 
     public void MidlName (String mdName) {
         UserAccSearchElements.mdName.click();
+
     }
 
     public void Address2 (String address2) {
@@ -131,6 +132,11 @@ public class Spirit_User_Acc_page {
     }
     public boolean Saver$ClubValidations () {
         return UserAccSearchElements.SCMember.isDisplayed();
+    }
+
+    public boolean TheUserHasAPoint () {
+        return UserAccSearchElements.userPoint.isDisplayed();
+
     }
 
 }

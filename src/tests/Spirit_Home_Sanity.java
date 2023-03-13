@@ -792,7 +792,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
     @Test
-    public void  Join_Saver_Club_Displayed() throws Exception {
+    public void  Join_Saver_Club_Banner_Displayed() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
@@ -801,7 +801,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
     @Test
-    public void Join_Free_Spirit_Displayed() throws Exception {
+    public void Join_Free_Spirit_Banner_Displayed() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
@@ -811,7 +811,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
     }
 
     @Test
-    public void Free_Spirit_World_Elite_Mastercard_Displayed() throws Exception {
+    public void Free_Spirit_World_Elite_Mastercard_Banner_Displayed() throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
