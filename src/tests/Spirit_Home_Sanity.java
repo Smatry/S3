@@ -820,21 +820,29 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
     @Test
-    public void Travel_Adviser_Link() throws  Exception {
+    public void Ability_to_Add_2Pax() throws  Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        String expectedURL = "https://www.spirit.com/travel-advisory";
-        String expectedTitle = "Travel Advisories | Spirit Airlines";
-        driver.get("https://www.spirit.com/travel-advisory");
-        Thread.sleep(3000);
-        String newUrl = App().Flow().getCurrentPageUrl();
-        String newTitle = App().Flow().getCurrentPageTitle();
-        System.out.println(newUrl);
-        System.out.println(newTitle);
+        driver.findElement(By.xpath("//i[@class='far fa-chevron-down']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        Thread.sleep(2000);
 
-        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
-        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+
+    }
+    @Test
+    public void Ability_to_Add_3Pax() throws  Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//i[@class='far fa-chevron-down']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        Thread.sleep(2000);
 
     }
 

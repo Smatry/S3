@@ -605,8 +605,6 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
 
-
-
     @Test (description = "Test Data1.json", dataProviderClass = DataUnit1.class, dataProvider = "dataProvider1")
     public void Ability_To_Use_Test_Data_JSONFile(HashMap<String, String> hashMap) throws Exception {
 
