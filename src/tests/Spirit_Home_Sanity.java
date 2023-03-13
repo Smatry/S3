@@ -829,8 +829,6 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
         Thread.sleep(2000);
 
-
-
     }
     @Test
     public void Ability_to_Add_3Pax() throws  Exception {
@@ -844,6 +842,21 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
         driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
         Thread.sleep(2000);
 
+    }
+
+    @Test
+    public void Ability_to_Add_4Pax() throws  Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//i[@class='far fa-chevron-down']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        Thread.sleep(2000);
     }
 
 }
