@@ -138,5 +138,17 @@ public class Spirit_User_Acc_page {
         return UserAccSearchElements.userPoint.isDisplayed();
 
     }
+    public boolean GoldMemberValidation () {
+        return UserAccSearchElements.GoldMember.isDisplayed();
 
-}
+    }
+    public boolean SilverMemberValidation () {
+        return UserAccSearchElements.SilverMember.isDisplayed();
+
+    }
+    public boolean FreeSpiritNumberValidation () {
+        return UserAccSearchElements.freeSpiritNumber.isDisplayed();
+
+      }
+
+    }

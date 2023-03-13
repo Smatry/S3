@@ -68,6 +68,18 @@ public class Spirit_User_Acc_Elements {
     //The_User_Has_A_Points
     @FindBy(xpath = "//div[@class='grid-column-2-row-1 grid-center-align']//div[@class='sub-header-user-points']") public WebElement userPoint;
 
+    //Gold_Member_Validation
+    @FindBy(xpath = "//img[@alt='member gold badge']") public WebElement GoldMember;
+
+    //Silver_Member_Validation
+    @FindBy(xpath = "//img[@alt='member silver badge']") public WebElement SilverMember;
+
+    //Free_Spirit_Number_Validation
+    @FindBy(id = "free-spirit-number") public WebElement freeSpiritNumber;
+
+
+
+
 
 
     public Spirit_User_Acc_Elements (WebDriver driver) {

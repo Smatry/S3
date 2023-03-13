@@ -465,7 +465,7 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
     }
 
     @Test
-    public void Saver$_Club_Validation() throws Exception {
+    public void Saver$_Club_Member_Validation() throws Exception {
 
         SoftAssert sa = new SoftAssert();
 
@@ -531,7 +531,64 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
         Thread.sleep(2000);
         App().Pages().SpiritUserAccPage().SingIN();
         Thread.sleep(5000);
-        sa.assertTrue(driver.findElement(By.xpath("//img[@alt='member gold badge']")).isDisplayed());
+        sa.assertTrue(App().Pages().SpiritUserAccPage().GoldMemberValidation());
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/activity";
+        String expectedTitle = "Spirit Airlines - Loyalty";
+        Thread.sleep(5000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(6000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+
+    }
+
+
+    @Test
+    public void Silver_Member_Validation() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("lennoxslvsc@qa.test");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Zxasqw12!");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        sa.assertTrue(App().Pages().SpiritUserAccPage().SilverMemberValidation());
+        Thread.sleep(5000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/activity";
+        String expectedTitle = "Spirit Airlines - Loyalty";
+        Thread.sleep(5000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(6000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+
+    }
+
+    @Test
+    public void Free_Spirit_Number_Validation() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("lennox@qa.test");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Zxasqw12!");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        sa.assertTrue(App().Pages().SpiritUserAccPage().FreeSpiritNumberValidation());
         Thread.sleep(5000);
         String expectedURL = "https://qa01.nk.spirit.com/account/activity";
         String expectedTitle = "Spirit Airlines - Loyalty";
