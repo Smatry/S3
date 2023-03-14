@@ -263,4 +263,5 @@ public class Spirit_Home_Page {
         homeSearchElements.addingAdults.click();
 
     }
+
 }
