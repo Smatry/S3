@@ -88,6 +88,10 @@ public class Spirit_Home_Page_Elements {
      // Sing_IN_IsEnable
      @FindBy (xpath = "//button[@class='btn btn-block btn-primary btn-responsive']") public WebElement SingINIsEnable;
 
+     //Ability_to_Add
+     @FindBy (xpath = "//i[@class='far fa-chevron-down']") public WebElement paxDropDown;
+     @FindBy (xpath = "//div//i[@class='icon-add-circle']") public WebElement addingAdults;
+
 
 
 

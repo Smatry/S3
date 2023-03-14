@@ -177,7 +177,6 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
 
-
     }
 
     @Test
@@ -796,7 +795,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed());
+        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubBannerDisplayed());
         Thread.sleep(2000);
     }
 
@@ -805,7 +804,7 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(App().Pages().SpiritHomePage().JoinServerClubImageDisplayed());
+        sa.assertTrue(App().Pages().SpiritHomePage().JoinFreeSpiritBannerDisplayed());
         Thread.sleep(2000);
 
     }
@@ -815,7 +814,18 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        sa.assertTrue(App().Pages().SpiritHomePage().FreeSpiritWorldEliteMastercardImageDisplayed());
+        sa.assertTrue(App().Pages().SpiritHomePage().FreeSpiritWorldEliteMastercardBannerDisplayed());
+        Thread.sleep(2000);
+
+    }
+    @Test
+    public void Ability_to_Add_1Pax() throws  Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().PaxDropDownMenu();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().AddingAdult1();
         Thread.sleep(2000);
 
     }
@@ -824,39 +834,90 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//i[@class='far fa-chevron-down']")).click();
+        App().Pages().SpiritHomePage().PaxDropDownMenu();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        App().Pages().SpiritHomePage().AddingAdult2();
         Thread.sleep(2000);
 
+
     }
+
     @Test
     public void Ability_to_Add_3Pax() throws  Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//i[@class='far fa-chevron-down']")).click();
+        App().Pages().SpiritHomePage().PaxDropDownMenu();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        App().Pages().SpiritHomePage().AddingAdult3();
         Thread.sleep(2000);
 
     }
 
     @Test
-    public void Ability_to_Add_4Pax() throws  Exception {
+    public void Ability_to_Add_4Pax () throws  Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//i[@class='far fa-chevron-down']")).click();
+        App().Pages().SpiritHomePage().PaxDropDownMenu();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        App().Pages().SpiritHomePage().AddingAdult4();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+
+    }
+
+    @Test
+    public void Ability_to_Add_5Pax () throws  Exception {
+
+        SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//div//i[@class='icon-add-circle']")).click();
+        App().Pages().SpiritHomePage().PaxDropDownMenu();
         Thread.sleep(2000);
+        App().Pages().SpiritHomePage().AddingAdult5();
+        Thread.sleep(2000);
+
+    }
+
+    @Test
+    public void Ability_to_Add_6Pax () throws  Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().PaxDropDownMenu();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().AddingAdult6();
+        Thread.sleep(2000);
+
+    }
+
+    @Test
+    public void Ability_to_Add_7Pax () throws  Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().PaxDropDownMenu();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().AddingAdult7();
+        Thread.sleep(2000);
+
+    }
+
+    @Test
+    public void Ability_to_Add_8Pax_MaxPax9 () throws  Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().PaxDropDownMenu();
+        Thread.sleep(2000);
+        App().Pages().SpiritHomePage().AddingAdult8();
+        Thread.sleep(2000);
+
+    }
+
+
+    @Test
+    public void Ability_to_LogIn_By_Using_DopDown () throws  Exception {
+
     }
 
 }

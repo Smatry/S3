@@ -9,14 +9,16 @@ import java.util.List;
 public class Spirit_Home_Page {
     WebDriver driver;
     Spirit_Home_Page_Elements homeSearchElements;
+
     public Spirit_Home_Page(WebDriver driver) {
         this.driver = driver;
         homeSearchElements = new Spirit_Home_Page_Elements(driver);
     }
 
     //My_Trip_url
-    public void MyTripUrl () {
+    public void MyTripUrl() {
         homeSearchElements.myTripsCTA.click();
+
     }
 
     //Check_In_Url
@@ -26,10 +28,11 @@ public class Spirit_Home_Page {
     }
 
     //Flight_Status_Url
-    public void FlightStatusUrl () {
+    public void FlightStatusUrl() {
         homeSearchElements.flightStatusCTA.click();
 
     }
+
     //Deals_Url
     public void DealsUrl() {
         homeSearchElements.DealsCTA.click();
@@ -44,36 +47,40 @@ public class Spirit_Home_Page {
 
 
     // Free_Spirit_url
-    public void FreeSpiritURL () {
+    public void FreeSpiritURL() {
         homeSearchElements.FreeSpiritIcon.click();
 
     }
+
     // Saver_Club_Url
-    public void SaverClubURL () {
+    public void SaverClubURL() {
         homeSearchElements.SaverClubIcon.click();
 
     }
+
     // drop_down_from
-    public void TripTypeSelect () {
+    public void TripTypeSelect() {
         homeSearchElements.TypeOfTheTripSelector.click();
 
     }
-    public void SelectedOneWay () {
+
+    public void SelectedOneWay() {
         homeSearchElements.OneWaySelected.click();
 
     }
-    public List<WebElement> DropDownFromStations () {
+
+    public List<WebElement> DropDownFromStations() {
         return homeSearchElements.DropDownFromAirport;
 
     }
 
     // drop_down_to
-    public List<WebElement> DropDownToStations () {
+    public List<WebElement> DropDownToStations() {
         return homeSearchElements.getDropDownToAirport;
 
     }
 
-    public void SpiritJetBlueUrl () {
+    public void SpiritJetBlueUrl() {
         homeSearchElements.SpiritJetBlueCTA.click();
 
     }
@@ -95,6 +102,7 @@ public class Spirit_Home_Page {
 
 
     }
+
     public void SearchButton() {
         homeSearchElements.search.click();
 
@@ -106,75 +114,153 @@ public class Spirit_Home_Page {
     }
 
 
-
-    public void SingInHeader () {
+    public void SingInHeader() {
         homeSearchElements.singInHeader.click();
 
     }
 
-    public void CreateAnAcc ()  {
+    public void CreateAnAcc() {
         homeSearchElements.createAnAccCTA.click();
 
     }
 
-    public void FirsName (String firstName) {
+    public void FirsName(String firstName) {
         homeSearchElements.firstName.sendKeys(firstName);
+
     }
 
-    public void LastName (String lastName) {
+    public void LastName(String lastName) {
         homeSearchElements.lastName.sendKeys(lastName);
 
     }
 
-    public void DOB (String dayOfBirth) {
+    public void DOB(String dayOfBirth) {
         homeSearchElements.dayOfBirth.sendKeys(dayOfBirth);
 
     }
 
-    public void Email (String email) {
+    public void Email(String email) {
         homeSearchElements.email.sendKeys(email);
 
     }
 
-    public void Password (String password) {
+    public void Password(String password) {
         homeSearchElements.password.sendKeys(password);
 
 
     }
-    public void CheckBox () {
+
+    public void CheckBox() {
         homeSearchElements.checkBox.click();
 
     }
-    public void SingUp () {
+
+    public void SingUp() {
         homeSearchElements.singUp.click();
+
     }
 
-    public void WithStandardPricing () {
+    public void WithStandardPricing() {
         homeSearchElements.standardPricing.click();
 
     }
-    public boolean SearchButtonEnable () {
+
+    public boolean SearchButtonEnable() {
         return homeSearchElements.searchBtn.isEnabled();
     }
 
-    public boolean ApplyMasterCardEnable () {
+    public boolean ApplyMasterCardEnable() {
         return homeSearchElements.applyMasterCardCTS.isEnabled();
     }
 
-    public boolean JoinServerClubImageDisplayed () {
+    public boolean JoinServerClubBannerDisplayed() {
         return homeSearchElements.joinServerClubImageIsDisplayed.isDisplayed();
 
     }
 
-    public boolean JoinFreeSpiritDisplayed () {
+    public boolean JoinFreeSpiritBannerDisplayed() {
         return homeSearchElements.joinFreeSpiritDisplayed.isDisplayed();
     }
 
-    public boolean FreeSpiritWorldEliteMastercardImageDisplayed () {
+    public boolean FreeSpiritWorldEliteMastercardBannerDisplayed() {
         return homeSearchElements.BankOfAmSTA.isDisplayed();
     }
 
-    public boolean SingInIsEnabled () {
+    public boolean SingInIsEnabled() {
         return homeSearchElements.SingINIsEnable.isEnabled();
+
+    }
+
+    public void PaxDropDownMenu() {
+        homeSearchElements.paxDropDown.click();
+
+    }
+
+    public void AddingAdult1() {
+        homeSearchElements.addingAdults.click();
+
+    }
+
+    public void AddingAdult2() {
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+
+    }
+
+    public void AddingAdult3() {
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+
+    }
+
+    public void AddingAdult4() {
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+
+    }
+
+    public void AddingAdult5() {
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+
+    }
+
+    public void AddingAdult6() {
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+
+    }
+
+    public void AddingAdult7() {
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+
+    }
+
+    public void AddingAdult8() {
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+        homeSearchElements.addingAdults.click();
+
     }
 }
