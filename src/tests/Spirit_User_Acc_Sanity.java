@@ -605,6 +605,66 @@ public class Spirit_User_Acc_Sanity  extends AbstractUserAccBaseTest {
 
     }
 
+    @Test
+    public void Offers_Free_Spirit_Master_Card_Apply_Now_Enabled() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("lennoxscgld@qa.test");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Zxasqw12!");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        sa.assertTrue(driver.findElement(By.id("mastercardUpsellButton")).isEnabled());
+        Thread.sleep(2000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/offers";
+        String expectedTitle = "Spirit Airlines - Offers";
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().OffersLink();
+        Thread.sleep(5000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(5000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+    @Test
+    public void Offers_Free_Spirit_Master_Card_Banner_Displayed() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+
+        App().Pages().SpiritUserAccPage().EmailData("lennoxscgld@qa.test");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().PasswordData("Zxasqw12!");
+        Thread.sleep(2000);
+        App().Pages().SpiritUserAccPage().SingIN();
+        Thread.sleep(5000);
+        sa.assertTrue(driver.findElement(By.id("mastercardUpsellButton")).isEnabled());
+        Thread.sleep(2000);
+        String expectedURL = "https://qa01.nk.spirit.com/account/offers";
+        String expectedTitle = "Spirit Airlines - Offers";
+        Thread.sleep(3000);
+        App().Pages().SpiritUserAccPage().OffersLink();
+        Thread.sleep(5000);
+        String newUrl = App().Flow().getCurrentPageUrl();
+        String newTitle = App().Flow().getCurrentPageTitle();
+        System.out.println(newUrl);
+        System.out.println(newTitle);
+        Thread.sleep(5000);
+
+        sa.assertEquals(newUrl, expectedURL, "Verify URL of new page");
+        sa.assertEquals(newTitle, expectedTitle, "Verify Title of new page");
+
+    }
+
+
+
     @Test (description = "Test Data2.json", dataProviderClass = DataUnit1.class, dataProvider = "dataProvider1")
     public void Ability_To_Use_Test_Data_JSONFile(HashMap<String, String> hashMap) throws Exception {
 

@@ -373,8 +373,6 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
 
     }
 
-
-
 }
 
 
