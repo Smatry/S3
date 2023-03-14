@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ef088cdb-0bf7-48fe-ba8b-6e78f2117500" name="Changes" comment="last push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Spirit_User_Acc_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Spirit_User_Acc_Elements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Spirit_User_Acc_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Spirit_User_Acc_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AbstractMyTripsBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AbstractMyTripsBaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_Home_Sanity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Spirit_User_Acc_Sanity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +69,8 @@
       <recent name="Libraries" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Spirit_User_Acc_Sanity.Offers_Free_Spirit_Master_Card_Banner_Displayed">
-    <configuration name="Spirit_Passenger_Info_Sanity.OW_Booking" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Spirit_Home_Sanity.Ability_to_Add_5Pax">
+    <configuration name="Spirit_Home_Sanity.Ability_to_Add_1Pax" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +79,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Passenger_Info_Sanity" />
-      <option name="METHOD_NAME" value="OW_Booking" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Ability_to_Add_1Pax" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -90,7 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_User_Acc_Sanity.Ability_To_Use_Test_Data_JSONFile" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Home_Sanity.Ability_to_Add_5Pax" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -99,8 +97,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_User_Acc_Sanity" />
-      <option name="METHOD_NAME" value="Ability_To_Use_Test_Data_JSONFile" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Ability_to_Add_5Pax" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -108,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_User_Acc_Sanity.Offers_Free_Spirit_Dining_Banner_Displayed" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Home_Sanity.Join_Free_Spirit_Banner_Displayed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +115,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_User_Acc_Sanity" />
-      <option name="METHOD_NAME" value="Offers_Free_Spirit_Dining_Banner_Displayed" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Join_Free_Spirit_Banner_Displayed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -126,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_User_Acc_Sanity.Offers_Free_Spirit_Master_Card_Apply_Now_Enabled" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Home_Sanity.Join_Saver_Club_Banner_Displayed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +133,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_User_Acc_Sanity" />
-      <option name="METHOD_NAME" value="Offers_Free_Spirit_Master_Card_Apply_Now_Enabled" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Join_Saver_Club_Banner_Displayed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -144,7 +142,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spirit_User_Acc_Sanity.Offers_Free_Spirit_Master_Card_Banner_Displayed" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Spirit_Home_Sanity.Sing_In_To_Acc_IsEnable" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spirit-test 3" />
       <extension name="coverage">
         <pattern>
@@ -153,8 +151,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Spirit_User_Acc_Sanity" />
-      <option name="METHOD_NAME" value="Offers_Free_Spirit_Master_Card_Banner_Displayed" />
+      <option name="MAIN_CLASS_NAME" value="tests.Spirit_Home_Sanity" />
+      <option name="METHOD_NAME" value="Sing_In_To_Acc_IsEnable" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -164,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Offers_Free_Spirit_Master_Card_Banner_Displayed" />
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Offers_Free_Spirit_Master_Card_Apply_Now_Enabled" />
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Offers_Free_Spirit_Dining_Banner_Displayed" />
-        <item itemvalue="TestNG.Spirit_User_Acc_Sanity.Ability_To_Use_Test_Data_JSONFile" />
-        <item itemvalue="TestNG.Spirit_Passenger_Info_Sanity.OW_Booking" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Ability_to_Add_5Pax" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Sing_In_To_Acc_IsEnable" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Join_Free_Spirit_Banner_Displayed" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Join_Saver_Club_Banner_Displayed" />
+        <item itemvalue="TestNG.Spirit_Home_Sanity.Ability_to_Add_1Pax" />
       </list>
     </recent_temporary>
   </component>
@@ -180,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676917492433</updated>
-    </task>
-    <task id="LOCAL-00019" summary="last push">
-      <created>1677329719446</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1677329719446</updated>
     </task>
     <task id="LOCAL-00020" summary="last push">
       <created>1677415145753</created>
@@ -524,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678808907980</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="last push">
+      <created>1678814114120</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1678814114120</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

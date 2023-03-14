@@ -819,6 +819,17 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
     @Test
+    public void Bundle_and_Save_Displayed_Enabled() throws Exception {
+
+        SoftAssert sa = new SoftAssert();
+        Thread.sleep(2000);
+        sa.assertTrue(driver.findElement(By.id("//label[@for='Vacation_1']")).isDisplayed());
+        Thread.sleep(2000);
+    }
+
+
+
+    @Test
     public void Ability_to_Add_1Pax() throws  Exception {
 
         SoftAssert sa = new SoftAssert();
