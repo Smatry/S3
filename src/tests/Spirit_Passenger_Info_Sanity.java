@@ -277,7 +277,7 @@ public class Spirit_Passenger_Info_Sanity extends AbstractPassengerInfoBaseTest 
     }
 
     @Test
-    public void OW_Booking () throws Exception {
+    public void OW_1Bag_Booking () throws Exception {
 
         SoftAssert sa = new SoftAssert();
         Thread.sleep(2000);
