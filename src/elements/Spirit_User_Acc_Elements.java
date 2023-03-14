@@ -77,7 +77,11 @@ public class Spirit_User_Acc_Elements {
     //Free_Spirit_Number_Validation
     @FindBy(id = "free-spirit-number") public WebElement freeSpiritNumber;
 
+    //Offers_Free_Spirit_Master_Card_Apply_Now_Enabled
+    @FindBy(id ="mastercardUpsellButton") public WebElement mastercardApplyEnabled;
 
+    //Offers_Free_Spirit_Master_Card_Banner_Displayed
+    @FindBy(id = "master-card-upsell-container") public WebElement mastercardBannerDisplayed;
 
 
 

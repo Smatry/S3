@@ -149,6 +149,14 @@ public class Spirit_User_Acc_page {
     public boolean FreeSpiritNumberValidation () {
         return UserAccSearchElements.freeSpiritNumber.isDisplayed();
 
-      }
+    }
+
+    public boolean OffersFreeSpiritMasterCardApplyNowEnabled () {
+        return UserAccSearchElements.mastercardApplyEnabled.isEnabled();
+    }
+    public boolean OffersFreeSpiritMasterCardBannerDisplayed () {
+        return UserAccSearchElements.mastercardBannerDisplayed.isDisplayed ();
 
     }
+
+}

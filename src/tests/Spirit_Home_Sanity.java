@@ -914,12 +914,4 @@ public class Spirit_Home_Sanity extends AbstractHomeBaseTest {
 
     }
 
-
-    @Test
-    public void Ability_to_LogIn_By_Using_DopDown () throws  Exception {
-
-    }
-
-
-
 }
